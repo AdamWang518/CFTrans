@@ -1,0 +1,38 @@
+2024-03-06 19:18:44,035 - INFO - data_dir       :	D:\Github\ShanghaiTech\part_A_final
+2024-03-06 19:18:44,035 - INFO - dataset        :	sha
+2024-03-06 19:18:44,035 - INFO - lr             :	1e-05
+2024-03-06 19:18:44,035 - INFO - weight_decay   :	0.0001
+2024-03-06 19:18:44,035 - INFO - resume         :	
+2024-03-06 19:18:44,036 - INFO - max_epoch      :	4000
+2024-03-06 19:18:44,036 - INFO - val_epoch      :	1
+2024-03-06 19:18:44,036 - INFO - val_start      :	0
+2024-03-06 19:18:44,036 - INFO - batch_size     :	8
+2024-03-06 19:18:44,036 - INFO - device         :	0
+2024-03-06 19:18:44,036 - INFO - num_workers    :	8
+2024-03-06 19:18:44,036 - INFO - crop_size      :	256
+2024-03-06 19:18:44,036 - INFO - wot            :	0.1
+2024-03-06 19:18:44,037 - INFO - wtv            :	0.01
+2024-03-06 19:18:44,037 - INFO - reg            :	10.0
+2024-03-06 19:18:44,037 - INFO - num_of_iter_in_ot:	100
+2024-03-06 19:18:44,037 - INFO - norm_cood      :	0
+2024-03-06 19:18:44,037 - INFO - run_name       :	CCTrans
+2024-03-06 19:18:44,037 - INFO - wandb          :	0
+2024-03-06 19:18:44,069 - INFO - using 1 gpus
+2024-03-06 19:18:46,346 - INFO - random initialization
+2024-03-06 19:18:46,372 - INFO - -----Epoch 0/4000-----
+2024-03-06 19:20:08,348 - INFO - Epoch 0 Train, Loss: 69.99, OT Loss: -6.62e-07, Wass Distance: 841.76, OT obj value: 91.70, Count Loss: 68.58, TV Loss: 1.41, MSE: 117.72 MAE: 68.58, Cost 82.0 sec
+2024-03-06 19:20:57,432 - INFO - Epoch 0 Val, MSE: 411.24 MAE: 294.49, Cost 47.5 sec
+2024-03-06 19:20:57,435 - INFO - save best mse 411.24 mae 294.49 model epoch 0
+2024-03-06 19:20:57,814 - INFO - -----Epoch 1/4000-----
+2024-03-06 19:21:55,693 - INFO - Epoch 1 Train, Loss: 51.74, OT Loss: 1.49e-07, Wass Distance: 831.88, OT obj value: 76.08, Count Loss: 50.40, TV Loss: 1.33, MSE: 91.40 MAE: 50.40, Cost 57.9 sec
+2024-03-06 19:22:40,570 - INFO - Epoch 1 Val, MSE: 277.11 MAE: 171.07, Cost 43.6 sec
+2024-03-06 19:22:40,574 - INFO - save best mse 277.11 mae 171.07 model epoch 1
+2024-03-06 19:22:40,980 - INFO - -----Epoch 2/4000-----
+2024-03-06 19:23:40,172 - INFO - Epoch 2 Train, Loss: 42.34, OT Loss: 4.64e-08, Wass Distance: 804.92, OT obj value: 66.43, Count Loss: 41.04, TV Loss: 1.31, MSE: 77.89 MAE: 41.04, Cost 59.2 sec
+2024-03-06 19:24:43,184 - INFO - Epoch 2 Val, MSE: 233.72 MAE: 139.14, Cost 61.5 sec
+2024-03-06 19:24:43,189 - INFO - save best mse 233.72 mae 139.14 model epoch 2
+2024-03-06 19:24:43,654 - INFO - -----Epoch 3/4000-----
+2024-03-06 19:26:16,538 - INFO - Epoch 3 Train, Loss: 40.23, OT Loss: 3.98e-08, Wass Distance: 824.47, OT obj value: 60.68, Count Loss: 38.93, TV Loss: 1.30, MSE: 78.22 MAE: 38.93, Cost 92.9 sec
+2024-03-06 19:27:33,993 - INFO - Epoch 3 Val, MSE: 172.32 MAE: 116.33, Cost 76.0 sec
+2024-03-06 19:27:33,998 - INFO - save best mse 172.32 mae 116.33 model epoch 3
+2024-03-06 19:27:34,450 - INFO - -----Epoch 4/4000-----

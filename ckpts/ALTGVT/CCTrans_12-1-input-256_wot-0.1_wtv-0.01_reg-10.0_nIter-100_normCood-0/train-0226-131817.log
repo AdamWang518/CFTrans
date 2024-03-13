@@ -1,0 +1,26 @@
+2024-02-26 13:18:17,156 - INFO - data_dir       :	D:\Github\ShanghaiTech\part_A_final
+2024-02-26 13:18:17,156 - INFO - dataset        :	sha
+2024-02-26 13:18:17,156 - INFO - lr             :	1e-05
+2024-02-26 13:18:17,156 - INFO - weight_decay   :	0.0001
+2024-02-26 13:18:17,156 - INFO - resume         :	
+2024-02-26 13:18:17,156 - INFO - max_epoch      :	4000
+2024-02-26 13:18:17,157 - INFO - val_epoch      :	1
+2024-02-26 13:18:17,157 - INFO - val_start      :	0
+2024-02-26 13:18:17,157 - INFO - batch_size     :	8
+2024-02-26 13:18:17,157 - INFO - device         :	0
+2024-02-26 13:18:17,157 - INFO - num_workers    :	8
+2024-02-26 13:18:17,157 - INFO - crop_size      :	256
+2024-02-26 13:18:17,158 - INFO - wot            :	0.1
+2024-02-26 13:18:17,158 - INFO - wtv            :	0.01
+2024-02-26 13:18:17,158 - INFO - reg            :	10.0
+2024-02-26 13:18:17,158 - INFO - num_of_iter_in_ot:	100
+2024-02-26 13:18:17,158 - INFO - norm_cood      :	0
+2024-02-26 13:18:17,159 - INFO - run_name       :	CCTrans
+2024-02-26 13:18:17,159 - INFO - wandb          :	0
+2024-02-26 13:18:17,189 - INFO - using 1 gpus
+2024-02-26 13:18:18,915 - INFO - random initialization
+2024-02-26 13:18:18,940 - INFO - -----Epoch 0/4000-----
+2024-02-26 13:19:08,514 - INFO - Epoch 0 Train, Loss: 45.31, OT Loss: 1.72e-08, Wass Distance: 821.25, OT obj value: 64.45, Count Loss: 44.01, TV Loss: 1.31, MSE: 87.76 MAE: 44.01, Cost 49.6 sec
+2024-02-26 13:19:48,418 - INFO - Epoch 0 Val, MSE: 202.51 MAE: 115.32, Cost 38.7 sec
+2024-02-26 13:19:48,421 - INFO - save best mse 202.51 mae 115.32 model epoch 0
+2024-02-26 13:19:48,776 - INFO - -----Epoch 1/4000-----

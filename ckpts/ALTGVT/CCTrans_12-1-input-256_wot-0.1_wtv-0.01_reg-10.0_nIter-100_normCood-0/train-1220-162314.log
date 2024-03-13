@@ -1,0 +1,30 @@
+2023-12-20 16:23:14,392 - INFO - data_dir       :	D:\Github\ShanghaiTech\part_A_final
+2023-12-20 16:23:14,392 - INFO - dataset        :	sha
+2023-12-20 16:23:14,392 - INFO - lr             :	1e-05
+2023-12-20 16:23:14,392 - INFO - weight_decay   :	0.0001
+2023-12-20 16:23:14,393 - INFO - resume         :	
+2023-12-20 16:23:14,393 - INFO - max_epoch      :	4000
+2023-12-20 16:23:14,393 - INFO - val_epoch      :	1
+2023-12-20 16:23:14,393 - INFO - val_start      :	0
+2023-12-20 16:23:14,393 - INFO - batch_size     :	8
+2023-12-20 16:23:14,393 - INFO - device         :	0
+2023-12-20 16:23:14,394 - INFO - num_workers    :	8
+2023-12-20 16:23:14,394 - INFO - crop_size      :	256
+2023-12-20 16:23:14,394 - INFO - wot            :	0.1
+2023-12-20 16:23:14,394 - INFO - wtv            :	0.01
+2023-12-20 16:23:14,394 - INFO - reg            :	10.0
+2023-12-20 16:23:14,394 - INFO - num_of_iter_in_ot:	100
+2023-12-20 16:23:14,395 - INFO - norm_cood      :	0
+2023-12-20 16:23:14,395 - INFO - run_name       :	CCTrans
+2023-12-20 16:23:14,395 - INFO - wandb          :	0
+2023-12-20 16:23:14,421 - INFO - using 1 gpus
+2023-12-20 16:23:17,528 - INFO - random initialization
+2023-12-20 16:23:17,555 - INFO - -----Epoch 0/4000-----
+2023-12-20 16:24:01,510 - INFO - Epoch 0 Train, Loss: 332.13, OT Loss: 4.41e-07, Wass Distance: 789.47, OT obj value: 146.56, Count Loss: 330.48, TV Loss: 1.64, MSE: 429.73 MAE: 330.48, Cost 44.0 sec
+2023-12-20 16:24:40,736 - INFO - Epoch 0 Val, MSE: 2895.54 MAE: 2471.22, Cost 37.9 sec
+2023-12-20 16:24:40,739 - INFO - save best mse 2895.54 mae 2471.22 model epoch 0
+2023-12-20 16:24:41,116 - INFO - -----Epoch 1/4000-----
+2023-12-20 16:25:21,065 - INFO - Epoch 1 Train, Loss: 80.03, OT Loss: -4.64e-08, Wass Distance: 798.94, OT obj value: 168.33, Count Loss: 78.43, TV Loss: 1.60, MSE: 107.30 MAE: 78.43, Cost 39.9 sec
+2023-12-20 16:25:59,330 - INFO - Epoch 1 Val, MSE: 351.05 MAE: 274.73, Cost 36.9 sec
+2023-12-20 16:25:59,333 - INFO - save best mse 351.05 mae 274.73 model epoch 1
+2023-12-20 16:25:59,708 - INFO - -----Epoch 2/4000-----

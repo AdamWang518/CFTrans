@@ -1,0 +1,22 @@
+2024-02-27 23:30:22,852 - INFO - data_dir       :	D:\Github\ShanghaiTech\part_A_final
+2024-02-27 23:30:22,852 - INFO - dataset        :	sha
+2024-02-27 23:30:22,853 - INFO - lr             :	1e-05
+2024-02-27 23:30:22,853 - INFO - weight_decay   :	0.0001
+2024-02-27 23:30:22,853 - INFO - resume         :	
+2024-02-27 23:30:22,853 - INFO - max_epoch      :	4000
+2024-02-27 23:30:22,853 - INFO - val_epoch      :	1
+2024-02-27 23:30:22,854 - INFO - val_start      :	0
+2024-02-27 23:30:22,854 - INFO - batch_size     :	8
+2024-02-27 23:30:22,854 - INFO - device         :	0
+2024-02-27 23:30:22,854 - INFO - num_workers    :	8
+2024-02-27 23:30:22,854 - INFO - crop_size      :	256
+2024-02-27 23:30:22,854 - INFO - wot            :	0.1
+2024-02-27 23:30:22,855 - INFO - wtv            :	0.01
+2024-02-27 23:30:22,855 - INFO - reg            :	10.0
+2024-02-27 23:30:22,855 - INFO - num_of_iter_in_ot:	100
+2024-02-27 23:30:22,855 - INFO - norm_cood      :	0
+2024-02-27 23:30:22,855 - INFO - run_name       :	CCTrans
+2024-02-27 23:30:22,855 - INFO - wandb          :	0
+2024-02-27 23:30:22,879 - INFO - using 1 gpus
+2024-02-27 23:30:24,849 - INFO - random initialization
+2024-02-27 23:30:24,872 - INFO - -----Epoch 0/4000-----

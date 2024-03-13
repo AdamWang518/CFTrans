@@ -1,0 +1,586 @@
+2023-12-20 16:29:59,535 - INFO - data_dir       :	D:\Github\ShanghaiTech\part_A_final
+2023-12-20 16:29:59,535 - INFO - dataset        :	sha
+2023-12-20 16:29:59,536 - INFO - lr             :	1e-05
+2023-12-20 16:29:59,536 - INFO - weight_decay   :	0.0001
+2023-12-20 16:29:59,536 - INFO - resume         :	
+2023-12-20 16:29:59,536 - INFO - max_epoch      :	4000
+2023-12-20 16:29:59,536 - INFO - val_epoch      :	1
+2023-12-20 16:29:59,536 - INFO - val_start      :	0
+2023-12-20 16:29:59,537 - INFO - batch_size     :	8
+2023-12-20 16:29:59,537 - INFO - device         :	0
+2023-12-20 16:29:59,537 - INFO - num_workers    :	8
+2023-12-20 16:29:59,537 - INFO - crop_size      :	256
+2023-12-20 16:29:59,537 - INFO - wot            :	0.1
+2023-12-20 16:29:59,538 - INFO - wtv            :	0.01
+2023-12-20 16:29:59,538 - INFO - reg            :	10.0
+2023-12-20 16:29:59,538 - INFO - num_of_iter_in_ot:	100
+2023-12-20 16:29:59,538 - INFO - norm_cood      :	0
+2023-12-20 16:29:59,538 - INFO - run_name       :	CCTrans
+2023-12-20 16:29:59,538 - INFO - wandb          :	0
+2023-12-20 16:29:59,562 - INFO - using 1 gpus
+2023-12-20 16:30:03,028 - INFO - random initialization
+2023-12-20 16:30:03,053 - INFO - -----Epoch 0/4000-----
+2023-12-20 16:30:48,458 - INFO - Epoch 0 Train, Loss: 531.87, OT Loss: -1.04e-07, Wass Distance: 781.53, OT obj value: 128.42, Count Loss: 530.27, TV Loss: 1.60, MSE: 606.92 MAE: 530.27, Cost 45.4 sec
+2023-12-20 16:31:32,188 - INFO - Epoch 0 Val, MSE: 3334.15 MAE: 2879.78, Cost 42.4 sec
+2023-12-20 16:31:32,191 - INFO - save best mse 3334.15 mae 2879.78 model epoch 0
+2023-12-20 16:31:32,570 - INFO - -----Epoch 1/4000-----
+2023-12-20 16:32:13,255 - INFO - Epoch 1 Train, Loss: 181.17, OT Loss: -1.29e-06, Wass Distance: 845.17, OT obj value: 127.80, Count Loss: 179.60, TV Loss: 1.57, MSE: 204.34 MAE: 179.60, Cost 40.7 sec
+2023-12-20 16:32:53,231 - INFO - Epoch 1 Val, MSE: 1344.89 MAE: 1171.26, Cost 38.5 sec
+2023-12-20 16:32:53,234 - INFO - save best mse 1344.89 mae 1171.26 model epoch 1
+2023-12-20 16:32:53,603 - INFO - -----Epoch 2/4000-----
+2023-12-20 16:33:35,245 - INFO - Epoch 2 Train, Loss: 86.80, OT Loss: -9.67e-07, Wass Distance: 870.21, OT obj value: 137.43, Count Loss: 85.27, TV Loss: 1.53, MSE: 101.85 MAE: 85.27, Cost 41.6 sec
+2023-12-20 16:34:15,067 - INFO - Epoch 2 Val, MSE: 543.49 MAE: 461.54, Cost 38.5 sec
+2023-12-20 16:34:15,070 - INFO - save best mse 543.49 mae 461.54 model epoch 2
+2023-12-20 16:34:15,459 - INFO - -----Epoch 3/4000-----
+2023-12-20 16:34:57,046 - INFO - Epoch 3 Train, Loss: 60.61, OT Loss: 6.19e-07, Wass Distance: 862.07, OT obj value: 143.24, Count Loss: 59.10, TV Loss: 1.51, MSE: 76.65 MAE: 59.10, Cost 41.6 sec
+2023-12-20 16:35:35,225 - INFO - Epoch 3 Val, MSE: 410.31 MAE: 335.79, Cost 36.9 sec
+2023-12-20 16:35:35,228 - INFO - save best mse 410.31 mae 335.79 model epoch 3
+2023-12-20 16:35:35,594 - INFO - -----Epoch 4/4000-----
+2023-12-20 16:36:16,244 - INFO - Epoch 4 Train, Loss: 58.00, OT Loss: 3.15e-07, Wass Distance: 845.66, OT obj value: 141.95, Count Loss: 56.53, TV Loss: 1.47, MSE: 71.75 MAE: 56.53, Cost 40.6 sec
+2023-12-20 16:36:56,863 - INFO - Epoch 4 Val, MSE: 543.23 MAE: 458.72, Cost 39.4 sec
+2023-12-20 16:36:56,867 - INFO - -----Epoch 5/4000-----
+2023-12-20 16:37:40,390 - INFO - Epoch 5 Train, Loss: 46.46, OT Loss: -6.20e-07, Wass Distance: 845.21, OT obj value: 146.09, Count Loss: 44.96, TV Loss: 1.49, MSE: 57.93 MAE: 44.96, Cost 43.5 sec
+2023-12-20 16:38:19,327 - INFO - Epoch 5 Val, MSE: 401.50 MAE: 332.28, Cost 37.7 sec
+2023-12-20 16:38:19,330 - INFO - save best mse 401.50 mae 332.28 model epoch 5
+2023-12-20 16:38:19,698 - INFO - -----Epoch 6/4000-----
+2023-12-20 16:38:59,691 - INFO - Epoch 6 Train, Loss: 47.00, OT Loss: -1.85e-07, Wass Distance: 844.23, OT obj value: 139.83, Count Loss: 45.60, TV Loss: 1.40, MSE: 59.18 MAE: 45.60, Cost 40.0 sec
+2023-12-20 16:39:39,629 - INFO - Epoch 6 Val, MSE: 282.27 MAE: 232.71, Cost 38.5 sec
+2023-12-20 16:39:39,632 - INFO - save best mse 282.27 mae 232.71 model epoch 6
+2023-12-20 16:39:40,003 - INFO - -----Epoch 7/4000-----
+2023-12-20 16:40:20,709 - INFO - Epoch 7 Train, Loss: 47.43, OT Loss: -2.19e-07, Wass Distance: 818.98, OT obj value: 143.43, Count Loss: 46.06, TV Loss: 1.36, MSE: 58.82 MAE: 46.06, Cost 40.7 sec
+2023-12-20 16:41:02,017 - INFO - Epoch 7 Val, MSE: 494.43 MAE: 417.83, Cost 39.9 sec
+2023-12-20 16:41:02,021 - INFO - -----Epoch 8/4000-----
+2023-12-20 16:41:45,108 - INFO - Epoch 8 Train, Loss: 43.03, OT Loss: -7.85e-07, Wass Distance: 824.60, OT obj value: 142.69, Count Loss: 41.65, TV Loss: 1.38, MSE: 52.96 MAE: 41.65, Cost 43.1 sec
+2023-12-20 16:42:27,360 - INFO - Epoch 8 Val, MSE: 268.11 MAE: 219.23, Cost 40.9 sec
+2023-12-20 16:42:27,363 - INFO - save best mse 268.11 mae 219.23 model epoch 8
+2023-12-20 16:42:27,824 - INFO - -----Epoch 9/4000-----
+2023-12-20 16:43:10,331 - INFO - Epoch 9 Train, Loss: 42.75, OT Loss: 8.02e-07, Wass Distance: 828.80, OT obj value: 138.97, Count Loss: 41.29, TV Loss: 1.46, MSE: 56.31 MAE: 41.29, Cost 42.5 sec
+2023-12-20 16:43:53,648 - INFO - Epoch 9 Val, MSE: 354.53 MAE: 287.77, Cost 42.0 sec
+2023-12-20 16:43:53,651 - INFO - -----Epoch 10/4000-----
+2023-12-20 16:44:37,587 - INFO - Epoch 10 Train, Loss: 44.59, OT Loss: 7.71e-07, Wass Distance: 809.52, OT obj value: 139.06, Count Loss: 43.22, TV Loss: 1.37, MSE: 58.20 MAE: 43.22, Cost 43.9 sec
+2023-12-20 16:45:19,297 - INFO - Epoch 10 Val, MSE: 336.82 MAE: 277.01, Cost 40.3 sec
+2023-12-20 16:45:19,300 - INFO - -----Epoch 11/4000-----
+2023-12-20 16:46:03,956 - INFO - Epoch 11 Train, Loss: 42.48, OT Loss: 3.16e-07, Wass Distance: 796.97, OT obj value: 137.56, Count Loss: 41.16, TV Loss: 1.32, MSE: 56.50 MAE: 41.16, Cost 44.7 sec
+2023-12-20 16:46:45,546 - INFO - Epoch 11 Val, MSE: 272.05 MAE: 222.74, Cost 40.0 sec
+2023-12-20 16:46:45,548 - INFO - -----Epoch 12/4000-----
+2023-12-20 16:47:28,757 - INFO - Epoch 12 Train, Loss: 41.72, OT Loss: -3.17e-07, Wass Distance: 770.08, OT obj value: 132.78, Count Loss: 40.30, TV Loss: 1.42, MSE: 53.64 MAE: 40.30, Cost 43.2 sec
+2023-12-20 16:48:09,758 - INFO - Epoch 12 Val, MSE: 338.83 MAE: 282.25, Cost 39.5 sec
+2023-12-20 16:48:09,761 - INFO - -----Epoch 13/4000-----
+2023-12-20 16:48:51,831 - INFO - Epoch 13 Train, Loss: 39.25, OT Loss: -5.11e-07, Wass Distance: 782.97, OT obj value: 129.19, Count Loss: 37.86, TV Loss: 1.39, MSE: 50.88 MAE: 37.86, Cost 42.1 sec
+2023-12-20 16:49:32,039 - INFO - Epoch 13 Val, MSE: 256.04 MAE: 214.49, Cost 38.8 sec
+2023-12-20 16:49:32,042 - INFO - save best mse 256.04 mae 214.49 model epoch 13
+2023-12-20 16:49:32,591 - INFO - -----Epoch 14/4000-----
+2023-12-20 16:50:14,394 - INFO - Epoch 14 Train, Loss: 41.12, OT Loss: -7.90e-07, Wass Distance: 778.36, OT obj value: 128.14, Count Loss: 39.77, TV Loss: 1.35, MSE: 50.03 MAE: 39.77, Cost 41.8 sec
+2023-12-20 16:50:55,074 - INFO - Epoch 14 Val, MSE: 330.45 MAE: 276.91, Cost 39.4 sec
+2023-12-20 16:50:55,077 - INFO - -----Epoch 15/4000-----
+2023-12-20 16:51:36,895 - INFO - Epoch 15 Train, Loss: 39.19, OT Loss: -2.44e-07, Wass Distance: 761.80, OT obj value: 136.87, Count Loss: 37.87, TV Loss: 1.31, MSE: 53.23 MAE: 37.87, Cost 41.8 sec
+2023-12-20 16:52:17,165 - INFO - Epoch 15 Val, MSE: 218.72 MAE: 142.11, Cost 39.0 sec
+2023-12-20 16:52:17,167 - INFO - save best mse 218.72 mae 142.11 model epoch 15
+2023-12-20 16:52:17,549 - INFO - -----Epoch 16/4000-----
+2023-12-20 16:52:59,771 - INFO - Epoch 16 Train, Loss: 41.28, OT Loss: -8.34e-08, Wass Distance: 783.43, OT obj value: 128.31, Count Loss: 39.95, TV Loss: 1.34, MSE: 52.13 MAE: 39.95, Cost 42.2 sec
+2023-12-20 16:53:40,414 - INFO - Epoch 16 Val, MSE: 233.11 MAE: 190.81, Cost 39.4 sec
+2023-12-20 16:53:40,417 - INFO - -----Epoch 17/4000-----
+2023-12-20 16:54:22,547 - INFO - Epoch 17 Train, Loss: 38.86, OT Loss: -5.50e-07, Wass Distance: 748.55, OT obj value: 125.73, Count Loss: 37.48, TV Loss: 1.39, MSE: 48.88 MAE: 37.48, Cost 42.1 sec
+2023-12-20 16:55:02,522 - INFO - Epoch 17 Val, MSE: 282.12 MAE: 235.55, Cost 38.8 sec
+2023-12-20 16:55:02,525 - INFO - -----Epoch 18/4000-----
+2023-12-20 16:55:44,467 - INFO - Epoch 18 Train, Loss: 35.66, OT Loss: -4.52e-07, Wass Distance: 737.68, OT obj value: 128.40, Count Loss: 34.31, TV Loss: 1.36, MSE: 44.62 MAE: 34.31, Cost 41.9 sec
+2023-12-20 16:56:24,688 - INFO - Epoch 18 Val, MSE: 246.36 MAE: 204.96, Cost 39.0 sec
+2023-12-20 16:56:24,691 - INFO - -----Epoch 19/4000-----
+2023-12-20 16:57:06,443 - INFO - Epoch 19 Train, Loss: 39.49, OT Loss: -6.83e-08, Wass Distance: 746.13, OT obj value: 118.69, Count Loss: 38.16, TV Loss: 1.33, MSE: 49.16 MAE: 38.16, Cost 41.8 sec
+2023-12-20 16:57:46,650 - INFO - Epoch 19 Val, MSE: 262.67 MAE: 212.64, Cost 39.0 sec
+2023-12-20 16:57:46,653 - INFO - -----Epoch 20/4000-----
+2023-12-20 16:58:28,534 - INFO - Epoch 20 Train, Loss: 35.99, OT Loss: 3.55e-07, Wass Distance: 727.30, OT obj value: 120.80, Count Loss: 34.64, TV Loss: 1.35, MSE: 45.66 MAE: 34.64, Cost 41.9 sec
+2023-12-20 16:59:08,602 - INFO - Epoch 20 Val, MSE: 250.49 MAE: 204.42, Cost 38.8 sec
+2023-12-20 16:59:08,605 - INFO - -----Epoch 21/4000-----
+2023-12-20 16:59:50,645 - INFO - Epoch 21 Train, Loss: 39.74, OT Loss: 2.38e-07, Wass Distance: 753.82, OT obj value: 122.60, Count Loss: 38.41, TV Loss: 1.33, MSE: 50.73 MAE: 38.41, Cost 42.0 sec
+2023-12-20 17:00:30,616 - INFO - Epoch 21 Val, MSE: 256.29 MAE: 212.59, Cost 38.7 sec
+2023-12-20 17:00:30,619 - INFO - -----Epoch 22/4000-----
+2023-12-20 17:01:12,473 - INFO - Epoch 22 Train, Loss: 35.68, OT Loss: -3.24e-07, Wass Distance: 745.19, OT obj value: 124.96, Count Loss: 34.34, TV Loss: 1.34, MSE: 45.13 MAE: 34.34, Cost 41.9 sec
+2023-12-20 17:01:51,417 - INFO - Epoch 22 Val, MSE: 193.51 MAE: 153.21, Cost 37.7 sec
+2023-12-20 17:01:51,420 - INFO - -----Epoch 23/4000-----
+2023-12-20 17:02:31,813 - INFO - Epoch 23 Train, Loss: 37.84, OT Loss: 8.46e-07, Wass Distance: 739.26, OT obj value: 118.55, Count Loss: 36.55, TV Loss: 1.29, MSE: 46.68 MAE: 36.55, Cost 40.4 sec
+2023-12-20 17:03:10,337 - INFO - Epoch 23 Val, MSE: 361.43 MAE: 295.93, Cost 37.3 sec
+2023-12-20 17:03:10,340 - INFO - -----Epoch 24/4000-----
+2023-12-20 17:03:50,731 - INFO - Epoch 24 Train, Loss: 35.46, OT Loss: -1.21e-07, Wass Distance: 729.15, OT obj value: 119.39, Count Loss: 34.14, TV Loss: 1.32, MSE: 45.24 MAE: 34.14, Cost 40.4 sec
+2023-12-20 17:04:29,474 - INFO - Epoch 24 Val, MSE: 310.66 MAE: 264.59, Cost 37.4 sec
+2023-12-20 17:04:29,478 - INFO - -----Epoch 25/4000-----
+2023-12-20 17:05:09,759 - INFO - Epoch 25 Train, Loss: 34.90, OT Loss: -5.64e-07, Wass Distance: 739.86, OT obj value: 117.61, Count Loss: 33.64, TV Loss: 1.27, MSE: 42.89 MAE: 33.64, Cost 40.3 sec
+2023-12-20 17:05:48,278 - INFO - Epoch 25 Val, MSE: 223.60 MAE: 187.05, Cost 37.3 sec
+2023-12-20 17:05:48,282 - INFO - -----Epoch 26/4000-----
+2023-12-20 17:06:29,009 - INFO - Epoch 26 Train, Loss: 33.23, OT Loss: -1.87e-07, Wass Distance: 757.06, OT obj value: 115.01, Count Loss: 31.91, TV Loss: 1.32, MSE: 44.81 MAE: 31.91, Cost 40.7 sec
+2023-12-20 17:07:07,464 - INFO - Epoch 26 Val, MSE: 212.11 MAE: 176.19, Cost 37.2 sec
+2023-12-20 17:07:07,468 - INFO - -----Epoch 27/4000-----
+2023-12-20 17:07:49,332 - INFO - Epoch 27 Train, Loss: 35.94, OT Loss: -5.77e-07, Wass Distance: 733.87, OT obj value: 118.45, Count Loss: 34.67, TV Loss: 1.27, MSE: 43.93 MAE: 34.67, Cost 41.9 sec
+2023-12-20 17:08:34,546 - INFO - Epoch 27 Val, MSE: 232.72 MAE: 190.20, Cost 44.0 sec
+2023-12-20 17:08:34,550 - INFO - -----Epoch 28/4000-----
+2023-12-20 17:09:15,907 - INFO - Epoch 28 Train, Loss: 35.48, OT Loss: 4.77e-07, Wass Distance: 721.83, OT obj value: 112.31, Count Loss: 34.23, TV Loss: 1.25, MSE: 43.56 MAE: 34.23, Cost 41.4 sec
+2023-12-20 17:09:56,010 - INFO - Epoch 28 Val, MSE: 188.48 MAE: 147.98, Cost 38.9 sec
+2023-12-20 17:09:56,013 - INFO - -----Epoch 29/4000-----
+2023-12-20 17:10:36,706 - INFO - Epoch 29 Train, Loss: 31.96, OT Loss: 4.63e-07, Wass Distance: 736.33, OT obj value: 113.42, Count Loss: 30.66, TV Loss: 1.30, MSE: 38.20 MAE: 30.66, Cost 40.7 sec
+2023-12-20 17:11:15,499 - INFO - Epoch 29 Val, MSE: 197.61 MAE: 150.23, Cost 37.6 sec
+2023-12-20 17:11:15,502 - INFO - -----Epoch 30/4000-----
+2023-12-20 17:11:57,719 - INFO - Epoch 30 Train, Loss: 35.12, OT Loss: 1.43e-07, Wass Distance: 703.84, OT obj value: 111.95, Count Loss: 33.74, TV Loss: 1.38, MSE: 47.65 MAE: 33.74, Cost 42.2 sec
+2023-12-20 17:12:40,240 - INFO - Epoch 30 Val, MSE: 374.14 MAE: 307.08, Cost 41.2 sec
+2023-12-20 17:12:40,243 - INFO - -----Epoch 31/4000-----
+2023-12-20 17:13:25,867 - INFO - Epoch 31 Train, Loss: 35.54, OT Loss: -6.26e-07, Wass Distance: 692.40, OT obj value: 109.11, Count Loss: 34.22, TV Loss: 1.32, MSE: 44.87 MAE: 34.22, Cost 45.6 sec
+2023-12-20 17:14:10,508 - INFO - Epoch 31 Val, MSE: 228.03 MAE: 182.04, Cost 43.3 sec
+2023-12-20 17:14:10,511 - INFO - -----Epoch 32/4000-----
+2023-12-20 17:14:55,873 - INFO - Epoch 32 Train, Loss: 30.36, OT Loss: 2.38e-09, Wass Distance: 701.39, OT obj value: 114.08, Count Loss: 29.05, TV Loss: 1.32, MSE: 39.87 MAE: 29.05, Cost 45.4 sec
+2023-12-20 17:15:39,813 - INFO - Epoch 32 Val, MSE: 233.36 MAE: 191.48, Cost 42.7 sec
+2023-12-20 17:15:39,817 - INFO - -----Epoch 33/4000-----
+2023-12-20 17:16:25,608 - INFO - Epoch 33 Train, Loss: 32.56, OT Loss: 2.62e-08, Wass Distance: 714.46, OT obj value: 107.53, Count Loss: 31.30, TV Loss: 1.26, MSE: 40.47 MAE: 31.30, Cost 45.8 sec
+2023-12-20 17:17:08,860 - INFO - Epoch 33 Val, MSE: 234.42 MAE: 191.18, Cost 42.0 sec
+2023-12-20 17:17:08,863 - INFO - -----Epoch 34/4000-----
+2023-12-20 17:17:54,619 - INFO - Epoch 34 Train, Loss: 32.70, OT Loss: 3.70e-08, Wass Distance: 715.01, OT obj value: 109.70, Count Loss: 31.47, TV Loss: 1.23, MSE: 41.90 MAE: 31.47, Cost 45.8 sec
+2023-12-20 17:18:37,865 - INFO - Epoch 34 Val, MSE: 226.47 MAE: 180.70, Cost 42.0 sec
+2023-12-20 17:18:37,869 - INFO - -----Epoch 35/4000-----
+2023-12-20 17:19:23,623 - INFO - Epoch 35 Train, Loss: 31.37, OT Loss: -5.14e-07, Wass Distance: 702.69, OT obj value: 111.38, Count Loss: 30.13, TV Loss: 1.24, MSE: 40.66 MAE: 30.13, Cost 45.8 sec
+2023-12-20 17:20:06,828 - INFO - Epoch 35 Val, MSE: 176.65 MAE: 135.01, Cost 41.9 sec
+2023-12-20 17:20:06,831 - INFO - save best mse 176.65 mae 135.01 model epoch 35
+2023-12-20 17:20:07,229 - INFO - -----Epoch 36/4000-----
+2023-12-20 17:20:52,916 - INFO - Epoch 36 Train, Loss: 29.67, OT Loss: 6.94e-07, Wass Distance: 711.84, OT obj value: 107.89, Count Loss: 28.38, TV Loss: 1.29, MSE: 38.50 MAE: 28.38, Cost 45.7 sec
+2023-12-20 17:21:36,136 - INFO - Epoch 36 Val, MSE: 167.49 MAE: 127.23, Cost 41.9 sec
+2023-12-20 17:21:36,139 - INFO - save best mse 167.49 mae 127.23 model epoch 36
+2023-12-20 17:21:36,534 - INFO - -----Epoch 37/4000-----
+2023-12-20 17:22:22,079 - INFO - Epoch 37 Train, Loss: 29.20, OT Loss: 3.18e-07, Wass Distance: 702.17, OT obj value: 105.15, Count Loss: 27.95, TV Loss: 1.26, MSE: 39.69 MAE: 27.95, Cost 45.5 sec
+2023-12-20 17:23:05,131 - INFO - Epoch 37 Val, MSE: 200.16 MAE: 164.78, Cost 41.8 sec
+2023-12-20 17:23:05,134 - INFO - -----Epoch 38/4000-----
+2023-12-20 17:23:50,661 - INFO - Epoch 38 Train, Loss: 29.30, OT Loss: -7.22e-07, Wass Distance: 701.89, OT obj value: 105.88, Count Loss: 28.02, TV Loss: 1.28, MSE: 37.59 MAE: 28.02, Cost 45.5 sec
+2023-12-20 17:24:34,209 - INFO - Epoch 38 Val, MSE: 220.41 MAE: 183.38, Cost 42.2 sec
+2023-12-20 17:24:34,212 - INFO - -----Epoch 39/4000-----
+2023-12-20 17:25:20,051 - INFO - Epoch 39 Train, Loss: 26.87, OT Loss: -1.90e-07, Wass Distance: 704.97, OT obj value: 105.83, Count Loss: 25.71, TV Loss: 1.16, MSE: 33.56 MAE: 25.71, Cost 45.8 sec
+2023-12-20 17:26:03,829 - INFO - Epoch 39 Val, MSE: 236.35 MAE: 193.97, Cost 42.2 sec
+2023-12-20 17:26:03,833 - INFO - -----Epoch 40/4000-----
+2023-12-20 17:26:49,402 - INFO - Epoch 40 Train, Loss: 29.61, OT Loss: -6.21e-07, Wass Distance: 689.41, OT obj value: 104.07, Count Loss: 28.31, TV Loss: 1.30, MSE: 37.77 MAE: 28.31, Cost 45.6 sec
+2023-12-20 17:27:33,275 - INFO - Epoch 40 Val, MSE: 171.83 MAE: 131.07, Cost 42.4 sec
+2023-12-20 17:27:33,278 - INFO - -----Epoch 41/4000-----
+2023-12-20 17:28:19,101 - INFO - Epoch 41 Train, Loss: 32.60, OT Loss: -6.26e-08, Wass Distance: 672.88, OT obj value: 100.66, Count Loss: 31.35, TV Loss: 1.26, MSE: 41.12 MAE: 31.35, Cost 45.8 sec
+2023-12-20 17:29:02,782 - INFO - Epoch 41 Val, MSE: 175.82 MAE: 137.52, Cost 42.3 sec
+2023-12-20 17:29:02,784 - INFO - -----Epoch 42/4000-----
+2023-12-20 17:29:46,707 - INFO - Epoch 42 Train, Loss: 29.58, OT Loss: 1.19e-07, Wass Distance: 690.76, OT obj value: 104.18, Count Loss: 28.32, TV Loss: 1.25, MSE: 36.95 MAE: 28.32, Cost 43.9 sec
+2023-12-20 17:30:26,871 - INFO - Epoch 42 Val, MSE: 175.76 MAE: 135.71, Cost 38.9 sec
+2023-12-20 17:30:26,874 - INFO - -----Epoch 43/4000-----
+2023-12-20 17:31:08,720 - INFO - Epoch 43 Train, Loss: 26.03, OT Loss: 5.64e-07, Wass Distance: 689.22, OT obj value: 103.51, Count Loss: 24.83, TV Loss: 1.20, MSE: 33.05 MAE: 24.83, Cost 41.8 sec
+2023-12-20 17:31:49,214 - INFO - Epoch 43 Val, MSE: 201.17 MAE: 160.70, Cost 38.9 sec
+2023-12-20 17:31:49,216 - INFO - -----Epoch 44/4000-----
+2023-12-20 17:32:31,311 - INFO - Epoch 44 Train, Loss: 29.95, OT Loss: 8.14e-07, Wass Distance: 676.46, OT obj value: 103.92, Count Loss: 28.69, TV Loss: 1.26, MSE: 37.56 MAE: 28.69, Cost 42.1 sec
+2023-12-20 17:33:10,382 - INFO - Epoch 44 Val, MSE: 205.26 MAE: 163.84, Cost 37.8 sec
+2023-12-20 17:33:10,384 - INFO - -----Epoch 45/4000-----
+2023-12-20 17:33:51,529 - INFO - Epoch 45 Train, Loss: 27.86, OT Loss: -7.49e-08, Wass Distance: 690.66, OT obj value: 104.35, Count Loss: 26.60, TV Loss: 1.25, MSE: 37.69 MAE: 26.60, Cost 41.1 sec
+2023-12-20 17:34:30,828 - INFO - Epoch 45 Val, MSE: 181.99 MAE: 146.04, Cost 38.0 sec
+2023-12-20 17:34:30,830 - INFO - -----Epoch 46/4000-----
+2023-12-20 17:35:11,737 - INFO - Epoch 46 Train, Loss: 25.59, OT Loss: -5.37e-07, Wass Distance: 675.69, OT obj value: 102.61, Count Loss: 24.42, TV Loss: 1.17, MSE: 32.41 MAE: 24.42, Cost 40.9 sec
+2023-12-20 17:35:50,668 - INFO - Epoch 46 Val, MSE: 220.27 MAE: 182.12, Cost 37.6 sec
+2023-12-20 17:35:50,671 - INFO - -----Epoch 47/4000-----
+2023-12-20 17:36:33,281 - INFO - Epoch 47 Train, Loss: 26.74, OT Loss: 5.78e-07, Wass Distance: 670.78, OT obj value: 104.92, Count Loss: 25.48, TV Loss: 1.26, MSE: 35.62 MAE: 25.48, Cost 42.6 sec
+2023-12-20 17:37:12,570 - INFO - Epoch 47 Val, MSE: 194.06 MAE: 157.57, Cost 37.8 sec
+2023-12-20 17:37:12,573 - INFO - -----Epoch 48/4000-----
+2023-12-20 17:37:53,768 - INFO - Epoch 48 Train, Loss: 25.31, OT Loss: 3.50e-07, Wass Distance: 659.73, OT obj value: 95.97, Count Loss: 24.15, TV Loss: 1.16, MSE: 33.39 MAE: 24.15, Cost 41.2 sec
+2023-12-20 17:38:33,233 - INFO - Epoch 48 Val, MSE: 165.33 MAE: 128.86, Cost 38.2 sec
+2023-12-20 17:38:33,236 - INFO - -----Epoch 49/4000-----
+2023-12-20 17:39:14,396 - INFO - Epoch 49 Train, Loss: 26.61, OT Loss: -2.68e-07, Wass Distance: 652.97, OT obj value: 98.16, Count Loss: 25.39, TV Loss: 1.22, MSE: 33.38 MAE: 25.39, Cost 41.2 sec
+2023-12-20 17:39:53,745 - INFO - Epoch 49 Val, MSE: 191.81 MAE: 150.66, Cost 38.0 sec
+2023-12-20 17:39:53,749 - INFO - -----Epoch 50/4000-----
+2023-12-20 17:40:36,238 - INFO - Epoch 50 Train, Loss: 27.76, OT Loss: 3.74e-07, Wass Distance: 634.47, OT obj value: 93.99, Count Loss: 26.56, TV Loss: 1.20, MSE: 36.66 MAE: 26.56, Cost 42.5 sec
+2023-12-20 17:41:15,837 - INFO - Epoch 50 Val, MSE: 188.03 MAE: 146.29, Cost 38.3 sec
+2023-12-20 17:41:15,840 - INFO - -----Epoch 51/4000-----
+2023-12-20 17:41:58,292 - INFO - Epoch 51 Train, Loss: 27.54, OT Loss: 1.94e-07, Wass Distance: 660.51, OT obj value: 95.40, Count Loss: 26.39, TV Loss: 1.15, MSE: 38.47 MAE: 26.39, Cost 42.5 sec
+2023-12-20 17:42:39,163 - INFO - Epoch 51 Val, MSE: 320.02 MAE: 257.94, Cost 39.6 sec
+2023-12-20 17:42:39,166 - INFO - -----Epoch 52/4000-----
+2023-12-20 17:43:22,115 - INFO - Epoch 52 Train, Loss: 27.66, OT Loss: -3.79e-07, Wass Distance: 678.41, OT obj value: 91.88, Count Loss: 26.48, TV Loss: 1.18, MSE: 37.00 MAE: 26.48, Cost 42.9 sec
+2023-12-20 17:44:02,023 - INFO - Epoch 52 Val, MSE: 160.22 MAE: 121.34, Cost 38.4 sec
+2023-12-20 17:44:02,025 - INFO - save best mse 160.22 mae 121.34 model epoch 52
+2023-12-20 17:44:02,401 - INFO - -----Epoch 53/4000-----
+2023-12-20 17:44:44,023 - INFO - Epoch 53 Train, Loss: 25.77, OT Loss: -5.24e-07, Wass Distance: 650.84, OT obj value: 95.23, Count Loss: 24.54, TV Loss: 1.23, MSE: 32.30 MAE: 24.54, Cost 41.6 sec
+2023-12-20 17:45:23,178 - INFO - Epoch 53 Val, MSE: 213.63 MAE: 172.97, Cost 37.9 sec
+2023-12-20 17:45:23,180 - INFO - -----Epoch 54/4000-----
+2023-12-20 17:46:04,128 - INFO - Epoch 54 Train, Loss: 25.31, OT Loss: 3.81e-09, Wass Distance: 664.59, OT obj value: 89.29, Count Loss: 24.09, TV Loss: 1.22, MSE: 31.50 MAE: 24.09, Cost 40.9 sec
+2023-12-20 17:46:43,444 - INFO - Epoch 54 Val, MSE: 203.62 MAE: 160.21, Cost 38.0 sec
+2023-12-20 17:46:43,446 - INFO - -----Epoch 55/4000-----
+2023-12-20 17:47:25,289 - INFO - Epoch 55 Train, Loss: 25.48, OT Loss: -4.16e-08, Wass Distance: 648.92, OT obj value: 95.09, Count Loss: 24.31, TV Loss: 1.17, MSE: 33.94 MAE: 24.31, Cost 41.8 sec
+2023-12-20 17:48:05,691 - INFO - Epoch 55 Val, MSE: 135.51 MAE: 96.92, Cost 38.8 sec
+2023-12-20 17:48:05,694 - INFO - save best mse 135.51 mae 96.92 model epoch 55
+2023-12-20 17:48:06,159 - INFO - -----Epoch 56/4000-----
+2023-12-20 17:48:48,320 - INFO - Epoch 56 Train, Loss: 25.49, OT Loss: 5.76e-07, Wass Distance: 660.49, OT obj value: 101.79, Count Loss: 24.28, TV Loss: 1.21, MSE: 31.65 MAE: 24.28, Cost 42.2 sec
+2023-12-20 17:49:27,263 - INFO - Epoch 56 Val, MSE: 188.67 MAE: 150.90, Cost 37.7 sec
+2023-12-20 17:49:27,266 - INFO - -----Epoch 57/4000-----
+2023-12-20 17:50:07,838 - INFO - Epoch 57 Train, Loss: 22.97, OT Loss: 1.20e-07, Wass Distance: 625.50, OT obj value: 87.66, Count Loss: 21.80, TV Loss: 1.16, MSE: 33.54 MAE: 21.80, Cost 40.6 sec
+2023-12-20 17:50:47,897 - INFO - Epoch 57 Val, MSE: 158.28 MAE: 125.24, Cost 38.6 sec
+2023-12-20 17:50:47,900 - INFO - -----Epoch 58/4000-----
+2023-12-20 17:51:28,976 - INFO - Epoch 58 Train, Loss: 26.07, OT Loss: 4.34e-07, Wass Distance: 662.71, OT obj value: 96.33, Count Loss: 24.82, TV Loss: 1.26, MSE: 36.42 MAE: 24.82, Cost 41.1 sec
+2023-12-20 17:52:08,021 - INFO - Epoch 58 Val, MSE: 216.22 MAE: 168.73, Cost 37.8 sec
+2023-12-20 17:52:08,024 - INFO - -----Epoch 59/4000-----
+2023-12-20 17:52:48,681 - INFO - Epoch 59 Train, Loss: 25.33, OT Loss: -5.42e-07, Wass Distance: 656.74, OT obj value: 86.06, Count Loss: 24.15, TV Loss: 1.18, MSE: 33.66 MAE: 24.15, Cost 40.7 sec
+2023-12-20 17:53:27,441 - INFO - Epoch 59 Val, MSE: 197.99 MAE: 164.06, Cost 37.3 sec
+2023-12-20 17:53:27,444 - INFO - -----Epoch 60/4000-----
+2023-12-20 17:54:08,423 - INFO - Epoch 60 Train, Loss: 24.08, OT Loss: 3.50e-07, Wass Distance: 639.20, OT obj value: 92.99, Count Loss: 22.85, TV Loss: 1.23, MSE: 30.82 MAE: 22.85, Cost 41.0 sec
+2023-12-20 17:54:47,326 - INFO - Epoch 60 Val, MSE: 176.72 MAE: 141.72, Cost 37.3 sec
+2023-12-20 17:54:47,329 - INFO - -----Epoch 61/4000-----
+2023-12-20 17:55:28,023 - INFO - Epoch 61 Train, Loss: 26.30, OT Loss: 4.79e-07, Wass Distance: 630.87, OT obj value: 91.60, Count Loss: 25.11, TV Loss: 1.19, MSE: 35.61 MAE: 25.11, Cost 40.7 sec
+2023-12-20 17:56:06,917 - INFO - Epoch 61 Val, MSE: 215.06 MAE: 175.26, Cost 37.6 sec
+2023-12-20 17:56:06,920 - INFO - -----Epoch 62/4000-----
+2023-12-20 17:56:47,489 - INFO - Epoch 62 Train, Loss: 23.80, OT Loss: -2.02e-07, Wass Distance: 650.41, OT obj value: 89.12, Count Loss: 22.69, TV Loss: 1.11, MSE: 29.24 MAE: 22.69, Cost 40.6 sec
+2023-12-20 17:57:26,239 - INFO - Epoch 62 Val, MSE: 184.10 MAE: 145.80, Cost 37.3 sec
+2023-12-20 17:57:26,241 - INFO - -----Epoch 63/4000-----
+2023-12-20 17:58:07,180 - INFO - Epoch 63 Train, Loss: 22.50, OT Loss: -1.03e-06, Wass Distance: 656.07, OT obj value: 92.35, Count Loss: 21.34, TV Loss: 1.17, MSE: 32.08 MAE: 21.34, Cost 40.9 sec
+2023-12-20 17:58:48,338 - INFO - Epoch 63 Val, MSE: 168.27 MAE: 133.36, Cost 39.5 sec
+2023-12-20 17:58:48,342 - INFO - -----Epoch 64/4000-----
+2023-12-20 17:59:30,579 - INFO - Epoch 64 Train, Loss: 21.01, OT Loss: 1.52e-07, Wass Distance: 647.66, OT obj value: 95.02, Count Loss: 19.86, TV Loss: 1.15, MSE: 26.30 MAE: 19.86, Cost 42.2 sec
+2023-12-20 18:00:09,379 - INFO - Epoch 64 Val, MSE: 178.75 MAE: 144.47, Cost 37.3 sec
+2023-12-20 18:00:09,381 - INFO - -----Epoch 65/4000-----
+2023-12-20 18:00:50,438 - INFO - Epoch 65 Train, Loss: 25.20, OT Loss: -8.49e-07, Wass Distance: 655.40, OT obj value: 88.84, Count Loss: 24.07, TV Loss: 1.13, MSE: 32.41 MAE: 24.07, Cost 41.1 sec
+2023-12-20 18:01:28,522 - INFO - Epoch 65 Val, MSE: 156.48 MAE: 121.44, Cost 36.8 sec
+2023-12-20 18:01:28,525 - INFO - -----Epoch 66/4000-----
+2023-12-20 18:02:08,139 - INFO - Epoch 66 Train, Loss: 24.88, OT Loss: -3.19e-07, Wass Distance: 647.99, OT obj value: 91.17, Count Loss: 23.65, TV Loss: 1.23, MSE: 32.14 MAE: 23.65, Cost 39.6 sec
+2023-12-20 18:02:46,113 - INFO - Epoch 66 Val, MSE: 152.27 MAE: 121.92, Cost 36.8 sec
+2023-12-20 18:02:46,116 - INFO - -----Epoch 67/4000-----
+2023-12-20 18:03:25,077 - INFO - Epoch 67 Train, Loss: 26.54, OT Loss: -3.24e-08, Wass Distance: 632.29, OT obj value: 91.34, Count Loss: 25.39, TV Loss: 1.15, MSE: 34.12 MAE: 25.39, Cost 39.0 sec
+2023-12-20 18:04:02,940 - INFO - Epoch 67 Val, MSE: 135.29 MAE: 105.79, Cost 36.6 sec
+2023-12-20 18:04:02,943 - INFO - -----Epoch 68/4000-----
+2023-12-20 18:04:42,305 - INFO - Epoch 68 Train, Loss: 24.72, OT Loss: 3.60e-07, Wass Distance: 630.28, OT obj value: 91.05, Count Loss: 23.52, TV Loss: 1.21, MSE: 35.55 MAE: 23.52, Cost 39.4 sec
+2023-12-20 18:05:20,981 - INFO - Epoch 68 Val, MSE: 231.25 MAE: 191.62, Cost 37.4 sec
+2023-12-20 18:05:20,984 - INFO - -----Epoch 69/4000-----
+2023-12-20 18:06:00,055 - INFO - Epoch 69 Train, Loss: 24.14, OT Loss: 5.24e-07, Wass Distance: 627.41, OT obj value: 86.90, Count Loss: 22.98, TV Loss: 1.16, MSE: 30.69 MAE: 22.98, Cost 39.1 sec
+2023-12-20 18:06:38,502 - INFO - Epoch 69 Val, MSE: 135.83 MAE: 95.62, Cost 37.2 sec
+2023-12-20 18:06:38,505 - INFO - save best mse 135.83 mae 95.62 model epoch 69
+2023-12-20 18:06:38,940 - INFO - -----Epoch 70/4000-----
+2023-12-20 18:07:18,531 - INFO - Epoch 70 Train, Loss: 20.96, OT Loss: -1.42e-07, Wass Distance: 640.83, OT obj value: 82.76, Count Loss: 19.80, TV Loss: 1.16, MSE: 27.70 MAE: 19.80, Cost 39.6 sec
+2023-12-20 18:07:57,336 - INFO - Epoch 70 Val, MSE: 131.98 MAE: 99.72, Cost 37.4 sec
+2023-12-20 18:07:57,339 - INFO - -----Epoch 71/4000-----
+2023-12-20 18:08:38,839 - INFO - Epoch 71 Train, Loss: 20.81, OT Loss: 3.25e-07, Wass Distance: 635.20, OT obj value: 89.35, Count Loss: 19.64, TV Loss: 1.17, MSE: 27.67 MAE: 19.64, Cost 41.5 sec
+2023-12-20 18:09:17,449 - INFO - Epoch 71 Val, MSE: 131.82 MAE: 101.36, Cost 37.3 sec
+2023-12-20 18:09:17,452 - INFO - -----Epoch 72/4000-----
+2023-12-20 18:09:56,750 - INFO - Epoch 72 Train, Loss: 22.23, OT Loss: -3.27e-07, Wass Distance: 638.52, OT obj value: 83.07, Count Loss: 21.08, TV Loss: 1.15, MSE: 28.05 MAE: 21.08, Cost 39.3 sec
+2023-12-20 18:10:34,476 - INFO - Epoch 72 Val, MSE: 162.59 MAE: 127.00, Cost 36.6 sec
+2023-12-20 18:10:34,478 - INFO - -----Epoch 73/4000-----
+2023-12-20 18:11:13,493 - INFO - Epoch 73 Train, Loss: 22.06, OT Loss: -1.18e-07, Wass Distance: 627.71, OT obj value: 84.25, Count Loss: 20.91, TV Loss: 1.15, MSE: 29.82 MAE: 20.91, Cost 39.0 sec
+2023-12-20 18:11:51,573 - INFO - Epoch 73 Val, MSE: 152.04 MAE: 120.30, Cost 36.9 sec
+2023-12-20 18:11:51,575 - INFO - -----Epoch 74/4000-----
+2023-12-20 18:12:31,315 - INFO - Epoch 74 Train, Loss: 23.28, OT Loss: 7.17e-07, Wass Distance: 616.52, OT obj value: 85.13, Count Loss: 22.07, TV Loss: 1.21, MSE: 28.73 MAE: 22.07, Cost 39.7 sec
+2023-12-20 18:13:09,312 - INFO - Epoch 74 Val, MSE: 151.95 MAE: 121.60, Cost 36.8 sec
+2023-12-20 18:13:09,315 - INFO - -----Epoch 75/4000-----
+2023-12-20 18:13:48,166 - INFO - Epoch 75 Train, Loss: 23.35, OT Loss: -6.60e-07, Wass Distance: 608.79, OT obj value: 89.97, Count Loss: 22.21, TV Loss: 1.14, MSE: 30.96 MAE: 22.21, Cost 38.9 sec
+2023-12-20 18:14:26,195 - INFO - Epoch 75 Val, MSE: 186.22 MAE: 151.05, Cost 36.7 sec
+2023-12-20 18:14:26,198 - INFO - -----Epoch 76/4000-----
+2023-12-20 18:15:05,652 - INFO - Epoch 76 Train, Loss: 24.39, OT Loss: -1.59e-07, Wass Distance: 642.39, OT obj value: 84.87, Count Loss: 23.20, TV Loss: 1.19, MSE: 32.92 MAE: 23.20, Cost 39.5 sec
+2023-12-20 18:15:43,762 - INFO - Epoch 76 Val, MSE: 219.02 MAE: 186.10, Cost 36.8 sec
+2023-12-20 18:15:43,765 - INFO - -----Epoch 77/4000-----
+2023-12-20 18:16:23,059 - INFO - Epoch 77 Train, Loss: 22.10, OT Loss: -1.48e-07, Wass Distance: 610.79, OT obj value: 82.82, Count Loss: 20.94, TV Loss: 1.16, MSE: 30.33 MAE: 20.94, Cost 39.3 sec
+2023-12-20 18:17:01,537 - INFO - Epoch 77 Val, MSE: 186.45 MAE: 149.02, Cost 37.2 sec
+2023-12-20 18:17:01,539 - INFO - -----Epoch 78/4000-----
+2023-12-20 18:17:43,816 - INFO - Epoch 78 Train, Loss: 18.19, OT Loss: -3.90e-07, Wass Distance: 627.66, OT obj value: 82.31, Count Loss: 17.02, TV Loss: 1.17, MSE: 22.66 MAE: 17.02, Cost 42.3 sec
+2023-12-20 18:18:22,815 - INFO - Epoch 78 Val, MSE: 182.41 MAE: 152.33, Cost 37.7 sec
+2023-12-20 18:18:22,818 - INFO - -----Epoch 79/4000-----
+2023-12-20 18:19:03,060 - INFO - Epoch 79 Train, Loss: 20.88, OT Loss: 1.98e-07, Wass Distance: 616.26, OT obj value: 84.75, Count Loss: 19.77, TV Loss: 1.10, MSE: 27.33 MAE: 19.77, Cost 40.2 sec
+2023-12-20 18:19:41,822 - INFO - Epoch 79 Val, MSE: 178.39 MAE: 143.84, Cost 37.2 sec
+2023-12-20 18:19:41,825 - INFO - -----Epoch 80/4000-----
+2023-12-20 18:20:21,530 - INFO - Epoch 80 Train, Loss: 21.99, OT Loss: 6.93e-07, Wass Distance: 608.26, OT obj value: 80.05, Count Loss: 20.84, TV Loss: 1.15, MSE: 28.83 MAE: 20.84, Cost 39.7 sec
+2023-12-20 18:20:59,394 - INFO - Epoch 80 Val, MSE: 134.38 MAE: 104.24, Cost 36.5 sec
+2023-12-20 18:20:59,397 - INFO - -----Epoch 81/4000-----
+2023-12-20 18:21:39,074 - INFO - Epoch 81 Train, Loss: 19.92, OT Loss: 4.68e-07, Wass Distance: 596.49, OT obj value: 81.14, Count Loss: 18.76, TV Loss: 1.16, MSE: 26.82 MAE: 18.76, Cost 39.7 sec
+2023-12-20 18:22:17,435 - INFO - Epoch 81 Val, MSE: 180.36 MAE: 147.01, Cost 37.1 sec
+2023-12-20 18:22:17,438 - INFO - -----Epoch 82/4000-----
+2023-12-20 18:22:57,130 - INFO - Epoch 82 Train, Loss: 21.11, OT Loss: 1.58e-07, Wass Distance: 626.47, OT obj value: 80.93, Count Loss: 19.94, TV Loss: 1.17, MSE: 29.70 MAE: 19.94, Cost 39.7 sec
+2023-12-20 18:23:34,883 - INFO - Epoch 82 Val, MSE: 130.08 MAE: 98.39, Cost 36.5 sec
+2023-12-20 18:23:34,886 - INFO - -----Epoch 83/4000-----
+2023-12-20 18:24:14,248 - INFO - Epoch 83 Train, Loss: 20.92, OT Loss: 2.82e-07, Wass Distance: 633.28, OT obj value: 78.21, Count Loss: 19.78, TV Loss: 1.15, MSE: 30.68 MAE: 19.78, Cost 39.4 sec
+2023-12-20 18:24:51,826 - INFO - Epoch 83 Val, MSE: 203.03 MAE: 164.29, Cost 36.4 sec
+2023-12-20 18:24:51,829 - INFO - -----Epoch 84/4000-----
+2023-12-20 18:25:31,460 - INFO - Epoch 84 Train, Loss: 25.23, OT Loss: -1.63e-07, Wass Distance: 622.93, OT obj value: 81.23, Count Loss: 24.06, TV Loss: 1.17, MSE: 34.83 MAE: 24.06, Cost 39.6 sec
+2023-12-20 18:26:09,193 - INFO - Epoch 84 Val, MSE: 159.28 MAE: 131.62, Cost 36.5 sec
+2023-12-20 18:26:09,195 - INFO - -----Epoch 85/4000-----
+2023-12-20 18:26:48,724 - INFO - Epoch 85 Train, Loss: 20.81, OT Loss: 9.31e-07, Wass Distance: 604.62, OT obj value: 80.32, Count Loss: 19.67, TV Loss: 1.14, MSE: 32.91 MAE: 19.67, Cost 39.5 sec
+2023-12-20 18:27:26,765 - INFO - Epoch 85 Val, MSE: 210.64 MAE: 170.52, Cost 36.6 sec
+2023-12-20 18:27:26,767 - INFO - -----Epoch 86/4000-----
+2023-12-20 18:28:06,176 - INFO - Epoch 86 Train, Loss: 19.06, OT Loss: 3.46e-07, Wass Distance: 584.88, OT obj value: 77.68, Count Loss: 17.92, TV Loss: 1.14, MSE: 26.41 MAE: 17.92, Cost 39.4 sec
+2023-12-20 18:28:44,322 - INFO - Epoch 86 Val, MSE: 128.67 MAE: 93.74, Cost 36.8 sec
+2023-12-20 18:28:44,325 - INFO - save best mse 128.67 mae 93.74 model epoch 86
+2023-12-20 18:28:44,686 - INFO - -----Epoch 87/4000-----
+2023-12-20 18:29:25,145 - INFO - Epoch 87 Train, Loss: 21.95, OT Loss: -6.22e-07, Wass Distance: 607.22, OT obj value: 79.89, Count Loss: 20.83, TV Loss: 1.12, MSE: 27.90 MAE: 20.83, Cost 40.5 sec
+2023-12-20 18:30:03,295 - INFO - Epoch 87 Val, MSE: 175.88 MAE: 144.23, Cost 36.8 sec
+2023-12-20 18:30:03,298 - INFO - -----Epoch 88/4000-----
+2023-12-20 18:30:42,581 - INFO - Epoch 88 Train, Loss: 20.43, OT Loss: 7.15e-08, Wass Distance: 602.08, OT obj value: 81.18, Count Loss: 19.28, TV Loss: 1.15, MSE: 29.57 MAE: 19.28, Cost 39.3 sec
+2023-12-20 18:31:20,524 - INFO - Epoch 88 Val, MSE: 153.07 MAE: 117.21, Cost 36.6 sec
+2023-12-20 18:31:20,527 - INFO - -----Epoch 89/4000-----
+2023-12-20 18:32:00,063 - INFO - Epoch 89 Train, Loss: 21.42, OT Loss: -1.85e-07, Wass Distance: 605.04, OT obj value: 75.78, Count Loss: 20.30, TV Loss: 1.12, MSE: 28.71 MAE: 20.30, Cost 39.5 sec
+2023-12-20 18:32:37,938 - INFO - Epoch 89 Val, MSE: 145.44 MAE: 116.90, Cost 36.5 sec
+2023-12-20 18:32:37,940 - INFO - -----Epoch 90/4000-----
+2023-12-20 18:33:19,347 - INFO - Epoch 90 Train, Loss: 18.34, OT Loss: -3.29e-08, Wass Distance: 608.43, OT obj value: 79.29, Count Loss: 17.24, TV Loss: 1.11, MSE: 24.72 MAE: 17.24, Cost 41.4 sec
+2023-12-20 18:34:01,205 - INFO - Epoch 90 Val, MSE: 172.21 MAE: 136.02, Cost 40.6 sec
+2023-12-20 18:34:01,208 - INFO - -----Epoch 91/4000-----
+2023-12-20 18:34:43,076 - INFO - Epoch 91 Train, Loss: 18.29, OT Loss: 4.85e-07, Wass Distance: 601.14, OT obj value: 77.97, Count Loss: 17.20, TV Loss: 1.09, MSE: 25.10 MAE: 17.20, Cost 41.9 sec
+2023-12-20 18:35:21,425 - INFO - Epoch 91 Val, MSE: 113.50 MAE: 84.57, Cost 37.0 sec
+2023-12-20 18:35:21,427 - INFO - save best mse 113.50 mae 84.57 model epoch 91
+2023-12-20 18:35:21,778 - INFO - -----Epoch 92/4000-----
+2023-12-20 18:36:01,392 - INFO - Epoch 92 Train, Loss: 18.01, OT Loss: -5.08e-07, Wass Distance: 604.99, OT obj value: 79.61, Count Loss: 16.87, TV Loss: 1.13, MSE: 24.73 MAE: 16.87, Cost 39.6 sec
+2023-12-20 18:36:39,858 - INFO - Epoch 92 Val, MSE: 144.88 MAE: 110.16, Cost 37.1 sec
+2023-12-20 18:36:39,861 - INFO - -----Epoch 93/4000-----
+2023-12-20 18:37:19,639 - INFO - Epoch 93 Train, Loss: 18.41, OT Loss: -1.10e-07, Wass Distance: 620.80, OT obj value: 75.39, Count Loss: 17.31, TV Loss: 1.09, MSE: 24.97 MAE: 17.31, Cost 39.8 sec
+2023-12-20 18:37:58,190 - INFO - Epoch 93 Val, MSE: 163.44 MAE: 126.83, Cost 37.2 sec
+2023-12-20 18:37:58,193 - INFO - -----Epoch 94/4000-----
+2023-12-20 18:38:37,539 - INFO - Epoch 94 Train, Loss: 17.99, OT Loss: 1.63e-07, Wass Distance: 624.64, OT obj value: 77.88, Count Loss: 16.95, TV Loss: 1.04, MSE: 25.52 MAE: 16.95, Cost 39.3 sec
+2023-12-20 18:39:16,162 - INFO - Epoch 94 Val, MSE: 144.54 MAE: 111.55, Cost 37.3 sec
+2023-12-20 18:39:16,165 - INFO - -----Epoch 95/4000-----
+2023-12-20 18:39:55,662 - INFO - Epoch 95 Train, Loss: 16.94, OT Loss: 8.53e-07, Wass Distance: 596.67, OT obj value: 76.15, Count Loss: 15.80, TV Loss: 1.14, MSE: 23.34 MAE: 15.80, Cost 39.5 sec
+2023-12-20 18:40:34,020 - INFO - Epoch 95 Val, MSE: 128.00 MAE: 97.09, Cost 37.0 sec
+2023-12-20 18:40:34,022 - INFO - -----Epoch 96/4000-----
+2023-12-20 18:41:13,387 - INFO - Epoch 96 Train, Loss: 18.43, OT Loss: 4.87e-07, Wass Distance: 597.85, OT obj value: 72.40, Count Loss: 17.29, TV Loss: 1.14, MSE: 25.45 MAE: 17.29, Cost 39.4 sec
+2023-12-20 18:41:51,525 - INFO - Epoch 96 Val, MSE: 132.61 MAE: 103.81, Cost 36.8 sec
+2023-12-20 18:41:51,527 - INFO - -----Epoch 97/4000-----
+2023-12-20 18:42:31,045 - INFO - Epoch 97 Train, Loss: 17.03, OT Loss: 8.36e-07, Wass Distance: 610.29, OT obj value: 75.19, Count Loss: 15.91, TV Loss: 1.12, MSE: 24.43 MAE: 15.91, Cost 39.5 sec
+2023-12-20 18:43:09,298 - INFO - Epoch 97 Val, MSE: 143.43 MAE: 104.89, Cost 37.0 sec
+2023-12-20 18:43:09,301 - INFO - -----Epoch 98/4000-----
+2023-12-20 18:43:48,690 - INFO - Epoch 98 Train, Loss: 18.38, OT Loss: -1.71e-07, Wass Distance: 587.98, OT obj value: 75.61, Count Loss: 17.28, TV Loss: 1.10, MSE: 26.27 MAE: 17.28, Cost 39.4 sec
+2023-12-20 18:44:26,868 - INFO - Epoch 98 Val, MSE: 137.74 MAE: 108.29, Cost 36.9 sec
+2023-12-20 18:44:26,871 - INFO - -----Epoch 99/4000-----
+2023-12-20 18:45:06,074 - INFO - Epoch 99 Train, Loss: 18.99, OT Loss: -5.63e-07, Wass Distance: 592.02, OT obj value: 72.83, Count Loss: 17.86, TV Loss: 1.14, MSE: 30.29 MAE: 17.86, Cost 39.2 sec
+2023-12-20 18:45:44,402 - INFO - Epoch 99 Val, MSE: 114.72 MAE: 74.27, Cost 37.0 sec
+2023-12-20 18:45:44,405 - INFO - save best mse 114.72 mae 74.27 model epoch 99
+2023-12-20 18:45:44,736 - INFO - -----Epoch 100/4000-----
+2023-12-20 18:46:24,085 - INFO - Epoch 100 Train, Loss: 17.51, OT Loss: 2.70e-08, Wass Distance: 591.36, OT obj value: 71.04, Count Loss: 16.41, TV Loss: 1.10, MSE: 21.52 MAE: 16.41, Cost 39.3 sec
+2023-12-20 18:47:02,593 - INFO - Epoch 100 Val, MSE: 135.91 MAE: 101.74, Cost 37.2 sec
+2023-12-20 18:47:02,596 - INFO - -----Epoch 101/4000-----
+2023-12-20 18:47:41,774 - INFO - Epoch 101 Train, Loss: 15.05, OT Loss: 2.67e-08, Wass Distance: 573.42, OT obj value: 72.04, Count Loss: 13.92, TV Loss: 1.12, MSE: 20.38 MAE: 13.92, Cost 39.2 sec
+2023-12-20 18:48:20,084 - INFO - Epoch 101 Val, MSE: 118.65 MAE: 88.24, Cost 36.9 sec
+2023-12-20 18:48:20,087 - INFO - -----Epoch 102/4000-----
+2023-12-20 18:48:59,524 - INFO - Epoch 102 Train, Loss: 17.62, OT Loss: -6.20e-08, Wass Distance: 592.16, OT obj value: 74.66, Count Loss: 16.48, TV Loss: 1.14, MSE: 26.01 MAE: 16.48, Cost 39.4 sec
+2023-12-20 18:49:37,759 - INFO - Epoch 102 Val, MSE: 188.00 MAE: 151.03, Cost 37.0 sec
+2023-12-20 18:49:37,761 - INFO - -----Epoch 103/4000-----
+2023-12-20 18:50:16,903 - INFO - Epoch 103 Train, Loss: 18.19, OT Loss: 4.55e-07, Wass Distance: 588.59, OT obj value: 74.30, Count Loss: 17.08, TV Loss: 1.11, MSE: 29.03 MAE: 17.08, Cost 39.1 sec
+2023-12-20 18:50:55,572 - INFO - Epoch 103 Val, MSE: 118.77 MAE: 86.69, Cost 37.3 sec
+2023-12-20 18:50:55,575 - INFO - -----Epoch 104/4000-----
+2023-12-20 18:51:34,881 - INFO - Epoch 104 Train, Loss: 20.55, OT Loss: -1.69e-08, Wass Distance: 587.29, OT obj value: 68.05, Count Loss: 19.43, TV Loss: 1.12, MSE: 31.58 MAE: 19.43, Cost 39.3 sec
+2023-12-20 18:52:13,068 - INFO - Epoch 104 Val, MSE: 110.74 MAE: 74.68, Cost 36.9 sec
+2023-12-20 18:52:13,071 - INFO - -----Epoch 105/4000-----
+2023-12-20 18:52:52,103 - INFO - Epoch 105 Train, Loss: 16.06, OT Loss: -1.25e-07, Wass Distance: 589.93, OT obj value: 70.92, Count Loss: 14.98, TV Loss: 1.08, MSE: 23.36 MAE: 14.98, Cost 39.0 sec
+2023-12-20 18:53:30,346 - INFO - Epoch 105 Val, MSE: 165.04 MAE: 120.93, Cost 36.9 sec
+2023-12-20 18:53:30,349 - INFO - -----Epoch 106/4000-----
+2023-12-20 18:54:09,639 - INFO - Epoch 106 Train, Loss: 18.42, OT Loss: -3.59e-07, Wass Distance: 573.19, OT obj value: 73.14, Count Loss: 17.25, TV Loss: 1.16, MSE: 25.98 MAE: 17.25, Cost 39.3 sec
+2023-12-20 18:54:47,875 - INFO - Epoch 106 Val, MSE: 112.99 MAE: 80.45, Cost 36.9 sec
+2023-12-20 18:54:47,878 - INFO - -----Epoch 107/4000-----
+2023-12-20 18:55:26,925 - INFO - Epoch 107 Train, Loss: 16.51, OT Loss: 1.91e-08, Wass Distance: 608.66, OT obj value: 66.39, Count Loss: 15.46, TV Loss: 1.05, MSE: 23.19 MAE: 15.46, Cost 39.0 sec
+2023-12-20 18:56:05,133 - INFO - Epoch 107 Val, MSE: 127.39 MAE: 96.25, Cost 36.9 sec
+2023-12-20 18:56:05,135 - INFO - -----Epoch 108/4000-----
+2023-12-20 18:56:44,204 - INFO - Epoch 108 Train, Loss: 15.98, OT Loss: -6.41e-08, Wass Distance: 592.66, OT obj value: 66.70, Count Loss: 14.83, TV Loss: 1.15, MSE: 22.51 MAE: 14.83, Cost 39.1 sec
+2023-12-20 18:57:22,567 - INFO - Epoch 108 Val, MSE: 141.65 MAE: 96.56, Cost 37.0 sec
+2023-12-20 18:57:22,571 - INFO - -----Epoch 109/4000-----
+2023-12-20 18:58:01,891 - INFO - Epoch 109 Train, Loss: 15.25, OT Loss: -4.33e-07, Wass Distance: 597.09, OT obj value: 68.05, Count Loss: 14.14, TV Loss: 1.12, MSE: 20.42 MAE: 14.14, Cost 39.3 sec
+2023-12-20 18:58:39,995 - INFO - Epoch 109 Val, MSE: 105.16 MAE: 67.98, Cost 36.8 sec
+2023-12-20 18:58:39,998 - INFO - save best mse 105.16 mae 67.98 model epoch 109
+2023-12-20 18:58:40,365 - INFO - -----Epoch 110/4000-----
+2023-12-20 18:59:19,836 - INFO - Epoch 110 Train, Loss: 18.48, OT Loss: -6.87e-07, Wass Distance: 583.73, OT obj value: 72.51, Count Loss: 17.35, TV Loss: 1.13, MSE: 27.03 MAE: 17.35, Cost 39.5 sec
+2023-12-20 18:59:58,279 - INFO - Epoch 110 Val, MSE: 115.78 MAE: 83.06, Cost 36.9 sec
+2023-12-20 18:59:58,282 - INFO - -----Epoch 111/4000-----
+2023-12-20 19:00:37,440 - INFO - Epoch 111 Train, Loss: 17.77, OT Loss: 7.94e-08, Wass Distance: 579.53, OT obj value: 71.36, Count Loss: 16.63, TV Loss: 1.14, MSE: 25.35 MAE: 16.63, Cost 39.2 sec
+2023-12-20 19:01:15,833 - INFO - Epoch 111 Val, MSE: 131.48 MAE: 98.14, Cost 37.0 sec
+2023-12-20 19:01:15,836 - INFO - -----Epoch 112/4000-----
+2023-12-20 19:01:55,149 - INFO - Epoch 112 Train, Loss: 18.45, OT Loss: 2.78e-07, Wass Distance: 584.69, OT obj value: 70.93, Count Loss: 17.34, TV Loss: 1.11, MSE: 26.72 MAE: 17.34, Cost 39.3 sec
+2023-12-20 19:02:33,276 - INFO - Epoch 112 Val, MSE: 118.46 MAE: 86.83, Cost 36.8 sec
+2023-12-20 19:02:33,280 - INFO - -----Epoch 113/4000-----
+2023-12-20 19:03:12,663 - INFO - Epoch 113 Train, Loss: 16.29, OT Loss: 3.89e-07, Wass Distance: 579.17, OT obj value: 68.75, Count Loss: 15.14, TV Loss: 1.15, MSE: 24.48 MAE: 15.14, Cost 39.4 sec
+2023-12-20 19:03:50,674 - INFO - Epoch 113 Val, MSE: 121.22 MAE: 84.96, Cost 36.7 sec
+2023-12-20 19:03:50,678 - INFO - -----Epoch 114/4000-----
+2023-12-20 19:04:29,749 - INFO - Epoch 114 Train, Loss: 16.91, OT Loss: -2.16e-07, Wass Distance: 585.85, OT obj value: 66.21, Count Loss: 15.79, TV Loss: 1.12, MSE: 24.71 MAE: 15.79, Cost 39.1 sec
+2023-12-20 19:05:07,806 - INFO - Epoch 114 Val, MSE: 138.10 MAE: 109.27, Cost 36.8 sec
+2023-12-20 19:05:07,809 - INFO - -----Epoch 115/4000-----
+2023-12-20 19:05:47,154 - INFO - Epoch 115 Train, Loss: 17.24, OT Loss: 1.94e-07, Wass Distance: 578.50, OT obj value: 68.58, Count Loss: 16.10, TV Loss: 1.14, MSE: 24.47 MAE: 16.10, Cost 39.3 sec
+2023-12-20 19:06:25,402 - INFO - Epoch 115 Val, MSE: 120.79 MAE: 86.59, Cost 36.9 sec
+2023-12-20 19:06:25,405 - INFO - -----Epoch 116/4000-----
+2023-12-20 19:07:04,514 - INFO - Epoch 116 Train, Loss: 15.96, OT Loss: 2.60e-07, Wass Distance: 570.23, OT obj value: 68.79, Count Loss: 14.86, TV Loss: 1.10, MSE: 22.89 MAE: 14.86, Cost 39.1 sec
+2023-12-20 19:07:42,591 - INFO - Epoch 116 Val, MSE: 131.25 MAE: 100.22, Cost 36.8 sec
+2023-12-20 19:07:42,594 - INFO - -----Epoch 117/4000-----
+2023-12-20 19:08:21,823 - INFO - Epoch 117 Train, Loss: 12.90, OT Loss: -6.17e-08, Wass Distance: 581.69, OT obj value: 66.65, Count Loss: 11.84, TV Loss: 1.06, MSE: 16.93 MAE: 11.84, Cost 39.2 sec
+2023-12-20 19:08:59,953 - INFO - Epoch 117 Val, MSE: 117.02 MAE: 85.96, Cost 36.9 sec
+2023-12-20 19:08:59,956 - INFO - -----Epoch 118/4000-----
+2023-12-20 19:09:39,149 - INFO - Epoch 118 Train, Loss: 15.07, OT Loss: -2.08e-08, Wass Distance: 562.75, OT obj value: 68.12, Count Loss: 13.95, TV Loss: 1.11, MSE: 21.08 MAE: 13.95, Cost 39.2 sec
+2023-12-20 19:10:17,290 - INFO - Epoch 118 Val, MSE: 132.06 MAE: 98.14, Cost 36.9 sec
+2023-12-20 19:10:17,293 - INFO - -----Epoch 119/4000-----
+2023-12-20 19:10:56,616 - INFO - Epoch 119 Train, Loss: 16.13, OT Loss: 5.35e-07, Wass Distance: 558.49, OT obj value: 67.22, Count Loss: 15.00, TV Loss: 1.13, MSE: 22.83 MAE: 15.00, Cost 39.3 sec
+2023-12-20 19:11:34,667 - INFO - Epoch 119 Val, MSE: 125.55 MAE: 73.19, Cost 36.8 sec
+2023-12-20 19:11:34,670 - INFO - -----Epoch 120/4000-----
+2023-12-20 19:12:13,865 - INFO - Epoch 120 Train, Loss: 15.53, OT Loss: -6.74e-07, Wass Distance: 574.05, OT obj value: 65.98, Count Loss: 14.44, TV Loss: 1.09, MSE: 23.03 MAE: 14.44, Cost 39.2 sec
+2023-12-20 19:12:52,090 - INFO - Epoch 120 Val, MSE: 116.80 MAE: 77.56, Cost 37.0 sec
+2023-12-20 19:12:52,093 - INFO - -----Epoch 121/4000-----
+2023-12-20 19:13:31,355 - INFO - Epoch 121 Train, Loss: 15.36, OT Loss: 2.28e-07, Wass Distance: 588.71, OT obj value: 64.25, Count Loss: 14.22, TV Loss: 1.14, MSE: 21.29 MAE: 14.22, Cost 39.3 sec
+2023-12-20 19:14:10,191 - INFO - Epoch 121 Val, MSE: 105.22 MAE: 67.34, Cost 37.6 sec
+2023-12-20 19:14:10,193 - INFO - save best mse 105.22 mae 67.34 model epoch 121
+2023-12-20 19:14:10,564 - INFO - -----Epoch 122/4000-----
+2023-12-20 19:14:49,942 - INFO - Epoch 122 Train, Loss: 15.68, OT Loss: -2.20e-07, Wass Distance: 590.18, OT obj value: 66.06, Count Loss: 14.62, TV Loss: 1.06, MSE: 22.08 MAE: 14.62, Cost 39.4 sec
+2023-12-20 19:15:28,304 - INFO - Epoch 122 Val, MSE: 142.84 MAE: 105.17, Cost 36.9 sec
+2023-12-20 19:15:28,307 - INFO - -----Epoch 123/4000-----
+2023-12-20 19:16:07,606 - INFO - Epoch 123 Train, Loss: 15.61, OT Loss: -4.86e-07, Wass Distance: 568.84, OT obj value: 68.74, Count Loss: 14.49, TV Loss: 1.12, MSE: 22.07 MAE: 14.49, Cost 39.3 sec
+2023-12-20 19:16:45,975 - INFO - Epoch 123 Val, MSE: 104.70 MAE: 68.61, Cost 37.1 sec
+2023-12-20 19:16:45,978 - INFO - -----Epoch 124/4000-----
+2023-12-20 19:17:25,156 - INFO - Epoch 124 Train, Loss: 16.16, OT Loss: -3.93e-07, Wass Distance: 559.24, OT obj value: 68.08, Count Loss: 15.02, TV Loss: 1.13, MSE: 22.82 MAE: 15.02, Cost 39.2 sec
+2023-12-20 19:18:03,290 - INFO - Epoch 124 Val, MSE: 134.63 MAE: 100.51, Cost 36.8 sec
+2023-12-20 19:18:03,293 - INFO - -----Epoch 125/4000-----
+2023-12-20 19:18:42,381 - INFO - Epoch 125 Train, Loss: 15.00, OT Loss: 2.06e-07, Wass Distance: 586.66, OT obj value: 59.80, Count Loss: 13.92, TV Loss: 1.09, MSE: 20.21 MAE: 13.92, Cost 39.1 sec
+2023-12-20 19:19:20,830 - INFO - Epoch 125 Val, MSE: 119.77 MAE: 87.90, Cost 37.2 sec
+2023-12-20 19:19:20,833 - INFO - -----Epoch 126/4000-----
+2023-12-20 19:20:00,184 - INFO - Epoch 126 Train, Loss: 15.41, OT Loss: -3.15e-07, Wass Distance: 573.35, OT obj value: 69.06, Count Loss: 14.29, TV Loss: 1.12, MSE: 23.72 MAE: 14.29, Cost 39.4 sec
+2023-12-20 19:20:38,138 - INFO - Epoch 126 Val, MSE: 106.29 MAE: 77.75, Cost 36.8 sec
+2023-12-20 19:20:38,141 - INFO - -----Epoch 127/4000-----
+2023-12-20 19:21:17,497 - INFO - Epoch 127 Train, Loss: 14.18, OT Loss: -3.27e-08, Wass Distance: 577.37, OT obj value: 64.01, Count Loss: 13.07, TV Loss: 1.11, MSE: 19.58 MAE: 13.07, Cost 39.4 sec
+2023-12-20 19:21:55,576 - INFO - Epoch 127 Val, MSE: 120.04 MAE: 84.00, Cost 36.8 sec
+2023-12-20 19:21:55,579 - INFO - -----Epoch 128/4000-----
+2023-12-20 19:22:34,691 - INFO - Epoch 128 Train, Loss: 16.74, OT Loss: 6.04e-08, Wass Distance: 589.60, OT obj value: 64.76, Count Loss: 15.66, TV Loss: 1.08, MSE: 24.92 MAE: 15.66, Cost 39.1 sec
+2023-12-20 19:23:13,016 - INFO - Epoch 128 Val, MSE: 126.38 MAE: 96.87, Cost 37.0 sec
+2023-12-20 19:23:13,020 - INFO - -----Epoch 129/4000-----
+2023-12-20 19:23:52,436 - INFO - Epoch 129 Train, Loss: 17.26, OT Loss: 2.99e-07, Wass Distance: 587.57, OT obj value: 63.61, Count Loss: 16.19, TV Loss: 1.07, MSE: 24.63 MAE: 16.19, Cost 39.4 sec
+2023-12-20 19:24:30,837 - INFO - Epoch 129 Val, MSE: 167.59 MAE: 131.11, Cost 37.1 sec
+2023-12-20 19:24:30,840 - INFO - -----Epoch 130/4000-----
+2023-12-20 19:25:10,271 - INFO - Epoch 130 Train, Loss: 17.82, OT Loss: 1.49e-07, Wass Distance: 578.06, OT obj value: 65.98, Count Loss: 16.68, TV Loss: 1.15, MSE: 29.23 MAE: 16.68, Cost 39.4 sec
+2023-12-20 19:25:49,109 - INFO - Epoch 130 Val, MSE: 132.95 MAE: 100.48, Cost 37.6 sec
+2023-12-20 19:25:49,112 - INFO - -----Epoch 131/4000-----
+2023-12-20 19:26:29,781 - INFO - Epoch 131 Train, Loss: 15.96, OT Loss: 1.88e-07, Wass Distance: 566.31, OT obj value: 63.80, Count Loss: 14.85, TV Loss: 1.12, MSE: 23.73 MAE: 14.85, Cost 40.7 sec
+2023-12-20 19:27:09,935 - INFO - Epoch 131 Val, MSE: 107.27 MAE: 75.91, Cost 38.7 sec
+2023-12-20 19:27:09,939 - INFO - -----Epoch 132/4000-----
+2023-12-20 19:27:51,631 - INFO - Epoch 132 Train, Loss: 15.92, OT Loss: -5.95e-07, Wass Distance: 570.70, OT obj value: 63.53, Count Loss: 14.83, TV Loss: 1.09, MSE: 22.14 MAE: 14.83, Cost 41.7 sec
+2023-12-20 19:28:32,948 - INFO - Epoch 132 Val, MSE: 119.28 MAE: 90.33, Cost 40.0 sec
+2023-12-20 19:28:32,951 - INFO - -----Epoch 133/4000-----
+2023-12-20 19:29:14,115 - INFO - Epoch 133 Train, Loss: 16.89, OT Loss: 1.95e-07, Wass Distance: 559.28, OT obj value: 60.82, Count Loss: 15.73, TV Loss: 1.16, MSE: 22.12 MAE: 15.73, Cost 41.2 sec
+2023-12-20 19:29:52,900 - INFO - Epoch 133 Val, MSE: 108.69 MAE: 71.63, Cost 37.4 sec
+2023-12-20 19:29:52,902 - INFO - -----Epoch 134/4000-----
+2023-12-20 19:30:32,792 - INFO - Epoch 134 Train, Loss: 16.75, OT Loss: 2.22e-07, Wass Distance: 569.93, OT obj value: 61.55, Count Loss: 15.64, TV Loss: 1.11, MSE: 26.03 MAE: 15.64, Cost 39.9 sec
+2023-12-20 19:31:11,341 - INFO - Epoch 134 Val, MSE: 113.22 MAE: 80.78, Cost 37.1 sec
+2023-12-20 19:31:11,344 - INFO - -----Epoch 135/4000-----
+2023-12-20 19:31:51,976 - INFO - Epoch 135 Train, Loss: 16.39, OT Loss: 3.89e-07, Wass Distance: 582.12, OT obj value: 64.60, Count Loss: 15.28, TV Loss: 1.10, MSE: 27.02 MAE: 15.28, Cost 40.6 sec
+2023-12-20 19:32:30,376 - INFO - Epoch 135 Val, MSE: 121.51 MAE: 88.86, Cost 37.0 sec
+2023-12-20 19:32:30,379 - INFO - -----Epoch 136/4000-----
+2023-12-20 19:33:10,464 - INFO - Epoch 136 Train, Loss: 15.18, OT Loss: 2.22e-07, Wass Distance: 560.67, OT obj value: 62.71, Count Loss: 14.06, TV Loss: 1.11, MSE: 20.96 MAE: 14.06, Cost 40.1 sec
+2023-12-20 19:33:48,820 - INFO - Epoch 136 Val, MSE: 111.29 MAE: 78.06, Cost 37.1 sec
+2023-12-20 19:33:48,823 - INFO - -----Epoch 137/4000-----
+2023-12-20 19:34:28,736 - INFO - Epoch 137 Train, Loss: 12.40, OT Loss: 4.05e-07, Wass Distance: 559.68, OT obj value: 67.88, Count Loss: 11.32, TV Loss: 1.08, MSE: 17.84 MAE: 11.32, Cost 39.9 sec
+2023-12-20 19:35:07,312 - INFO - Epoch 137 Val, MSE: 97.57 MAE: 66.51, Cost 37.3 sec
+2023-12-20 19:35:07,314 - INFO - save best mse 97.57 mae 66.51 model epoch 137
+2023-12-20 19:35:07,674 - INFO - -----Epoch 138/4000-----
+2023-12-20 19:35:47,969 - INFO - Epoch 138 Train, Loss: 13.27, OT Loss: -2.35e-08, Wass Distance: 553.78, OT obj value: 62.19, Count Loss: 12.19, TV Loss: 1.08, MSE: 18.17 MAE: 12.19, Cost 40.3 sec
+2023-12-20 19:36:26,197 - INFO - Epoch 138 Val, MSE: 105.54 MAE: 75.60, Cost 37.0 sec
+2023-12-20 19:36:26,200 - INFO - -----Epoch 139/4000-----
+2023-12-20 19:37:06,222 - INFO - Epoch 139 Train, Loss: 13.58, OT Loss: -1.43e-07, Wass Distance: 566.06, OT obj value: 64.92, Count Loss: 12.51, TV Loss: 1.08, MSE: 19.49 MAE: 12.51, Cost 40.0 sec
+2023-12-20 19:37:44,856 - INFO - Epoch 139 Val, MSE: 110.56 MAE: 69.51, Cost 37.2 sec
+2023-12-20 19:37:44,859 - INFO - -----Epoch 140/4000-----
+2023-12-20 19:38:26,130 - INFO - Epoch 140 Train, Loss: 14.81, OT Loss: 4.67e-08, Wass Distance: 570.70, OT obj value: 62.27, Count Loss: 13.69, TV Loss: 1.12, MSE: 23.05 MAE: 13.69, Cost 41.3 sec
+2023-12-20 19:39:07,696 - INFO - Epoch 140 Val, MSE: 103.46 MAE: 70.97, Cost 40.2 sec
+2023-12-20 19:39:07,698 - INFO - -----Epoch 141/4000-----
+2023-12-20 19:39:49,363 - INFO - Epoch 141 Train, Loss: 16.64, OT Loss: -5.28e-08, Wass Distance: 548.41, OT obj value: 58.69, Count Loss: 15.51, TV Loss: 1.13, MSE: 25.14 MAE: 15.51, Cost 41.7 sec
+2023-12-20 19:40:30,456 - INFO - Epoch 141 Val, MSE: 118.42 MAE: 87.22, Cost 39.7 sec
+2023-12-20 19:40:30,459 - INFO - -----Epoch 142/4000-----
+2023-12-20 19:41:12,393 - INFO - Epoch 142 Train, Loss: 13.64, OT Loss: 2.11e-07, Wass Distance: 565.83, OT obj value: 66.05, Count Loss: 12.54, TV Loss: 1.10, MSE: 21.69 MAE: 12.54, Cost 41.9 sec
+2023-12-20 19:41:53,664 - INFO - Epoch 142 Val, MSE: 140.30 MAE: 104.07, Cost 39.9 sec
+2023-12-20 19:41:53,667 - INFO - -----Epoch 143/4000-----
+2023-12-20 19:42:35,809 - INFO - Epoch 143 Train, Loss: 16.05, OT Loss: -3.72e-07, Wass Distance: 569.60, OT obj value: 63.78, Count Loss: 14.99, TV Loss: 1.06, MSE: 23.07 MAE: 14.99, Cost 42.1 sec
+2023-12-20 19:43:16,957 - INFO - Epoch 143 Val, MSE: 111.50 MAE: 81.28, Cost 39.8 sec
+2023-12-20 19:43:16,960 - INFO - -----Epoch 144/4000-----
+2023-12-20 19:43:59,032 - INFO - Epoch 144 Train, Loss: 14.98, OT Loss: 4.86e-07, Wass Distance: 548.62, OT obj value: 64.54, Count Loss: 13.93, TV Loss: 1.04, MSE: 23.16 MAE: 13.93, Cost 42.1 sec
+2023-12-20 19:44:40,415 - INFO - Epoch 144 Val, MSE: 116.44 MAE: 80.99, Cost 40.0 sec
+2023-12-20 19:44:40,418 - INFO - -----Epoch 145/4000-----
+2023-12-20 19:45:22,884 - INFO - Epoch 145 Train, Loss: 13.90, OT Loss: -3.65e-07, Wass Distance: 574.12, OT obj value: 58.68, Count Loss: 12.86, TV Loss: 1.03, MSE: 20.45 MAE: 12.86, Cost 42.5 sec
+2023-12-20 19:46:04,972 - INFO - Epoch 145 Val, MSE: 135.34 MAE: 94.75, Cost 40.5 sec
+2023-12-20 19:46:04,975 - INFO - -----Epoch 146/4000-----
+2023-12-20 19:46:47,323 - INFO - Epoch 146 Train, Loss: 15.11, OT Loss: 1.95e-07, Wass Distance: 548.84, OT obj value: 61.54, Count Loss: 14.03, TV Loss: 1.09, MSE: 23.47 MAE: 14.03, Cost 42.3 sec
+2023-12-20 19:47:29,587 - INFO - Epoch 146 Val, MSE: 112.46 MAE: 79.81, Cost 40.9 sec
+2023-12-20 19:47:29,590 - INFO - -----Epoch 147/4000-----
+2023-12-20 19:48:12,833 - INFO - Epoch 147 Train, Loss: 14.85, OT Loss: -2.19e-07, Wass Distance: 563.97, OT obj value: 61.92, Count Loss: 13.73, TV Loss: 1.12, MSE: 21.69 MAE: 13.73, Cost 43.2 sec
+2023-12-20 19:48:55,652 - INFO - Epoch 147 Val, MSE: 105.08 MAE: 67.22, Cost 41.3 sec
+2023-12-20 19:48:55,656 - INFO - -----Epoch 148/4000-----
+2023-12-20 19:49:41,873 - INFO - Epoch 148 Train, Loss: 12.41, OT Loss: 2.90e-07, Wass Distance: 558.96, OT obj value: 62.08, Count Loss: 11.31, TV Loss: 1.10, MSE: 18.28 MAE: 11.31, Cost 46.2 sec
+2023-12-20 19:50:24,632 - INFO - Epoch 148 Val, MSE: 149.73 MAE: 110.33, Cost 41.4 sec
+2023-12-20 19:50:24,635 - INFO - -----Epoch 149/4000-----
+2023-12-20 19:51:08,227 - INFO - Epoch 149 Train, Loss: 14.06, OT Loss: 4.28e-07, Wass Distance: 533.81, OT obj value: 58.07, Count Loss: 12.89, TV Loss: 1.16, MSE: 24.47 MAE: 12.89, Cost 43.6 sec
+2023-12-20 19:51:51,008 - INFO - Epoch 149 Val, MSE: 116.83 MAE: 68.53, Cost 41.4 sec
+2023-12-20 19:51:51,011 - INFO - -----Epoch 150/4000-----
+2023-12-20 19:52:34,562 - INFO - Epoch 150 Train, Loss: 13.75, OT Loss: 8.54e-08, Wass Distance: 546.79, OT obj value: 60.09, Count Loss: 12.71, TV Loss: 1.04, MSE: 20.26 MAE: 12.71, Cost 43.6 sec
+2023-12-20 19:53:17,440 - INFO - Epoch 150 Val, MSE: 99.27 MAE: 70.41, Cost 41.3 sec
+2023-12-20 19:53:17,442 - INFO - -----Epoch 151/4000-----
+2023-12-20 19:54:00,863 - INFO - Epoch 151 Train, Loss: 13.94, OT Loss: 1.55e-07, Wass Distance: 550.70, OT obj value: 63.69, Count Loss: 12.86, TV Loss: 1.09, MSE: 20.58 MAE: 12.86, Cost 43.4 sec
+2023-12-20 19:54:41,575 - INFO - Epoch 151 Val, MSE: 115.68 MAE: 79.95, Cost 39.3 sec
+2023-12-20 19:54:41,578 - INFO - -----Epoch 152/4000-----
+2023-12-20 19:55:21,718 - INFO - Epoch 152 Train, Loss: 12.66, OT Loss: 4.16e-08, Wass Distance: 562.01, OT obj value: 56.49, Count Loss: 11.56, TV Loss: 1.11, MSE: 16.33 MAE: 11.56, Cost 40.1 sec
+2023-12-20 19:55:59,939 - INFO - Epoch 152 Val, MSE: 99.77 MAE: 66.95, Cost 36.9 sec
+2023-12-20 19:55:59,942 - INFO - -----Epoch 153/4000-----
+2023-12-20 19:56:40,138 - INFO - Epoch 153 Train, Loss: 14.51, OT Loss: -2.44e-07, Wass Distance: 529.94, OT obj value: 59.70, Count Loss: 13.42, TV Loss: 1.10, MSE: 23.56 MAE: 13.42, Cost 40.2 sec
+2023-12-20 19:57:18,792 - INFO - Epoch 153 Val, MSE: 100.94 MAE: 67.19, Cost 37.4 sec
+2023-12-20 19:57:18,795 - INFO - -----Epoch 154/4000-----
+2023-12-20 19:58:02,407 - INFO - Epoch 154 Train, Loss: 13.12, OT Loss: -3.43e-08, Wass Distance: 576.07, OT obj value: 64.88, Count Loss: 12.02, TV Loss: 1.09, MSE: 19.86 MAE: 12.02, Cost 43.6 sec
+2023-12-20 19:58:44,336 - INFO - Epoch 154 Val, MSE: 133.04 MAE: 92.32, Cost 40.6 sec
+2023-12-20 19:58:44,339 - INFO - -----Epoch 155/4000-----
+2023-12-20 19:59:27,282 - INFO - Epoch 155 Train, Loss: 13.07, OT Loss: -5.82e-08, Wass Distance: 556.63, OT obj value: 60.72, Count Loss: 11.99, TV Loss: 1.08, MSE: 18.36 MAE: 11.99, Cost 42.9 sec
+2023-12-20 20:00:06,843 - INFO - Epoch 155 Val, MSE: 99.70 MAE: 62.12, Cost 38.2 sec
+2023-12-20 20:00:06,845 - INFO - save best mse 99.70 mae 62.12 model epoch 155
+2023-12-20 20:00:07,176 - INFO - -----Epoch 156/4000-----
+2023-12-20 20:00:47,142 - INFO - Epoch 156 Train, Loss: 12.21, OT Loss: 3.17e-07, Wass Distance: 555.81, OT obj value: 59.19, Count Loss: 11.11, TV Loss: 1.11, MSE: 17.15 MAE: 11.11, Cost 40.0 sec
+2023-12-20 20:01:28,482 - INFO - Epoch 156 Val, MSE: 127.69 MAE: 90.51, Cost 39.9 sec
+2023-12-20 20:01:28,486 - INFO - -----Epoch 157/4000-----
+2023-12-20 20:02:12,601 - INFO - Epoch 157 Train, Loss: 12.15, OT Loss: 6.19e-07, Wass Distance: 553.26, OT obj value: 61.88, Count Loss: 11.04, TV Loss: 1.11, MSE: 17.58 MAE: 11.04, Cost 44.1 sec
+2023-12-20 20:02:51,021 - INFO - Epoch 157 Val, MSE: 105.44 MAE: 71.17, Cost 36.9 sec
+2023-12-20 20:02:51,023 - INFO - -----Epoch 158/4000-----
+2023-12-20 20:03:30,778 - INFO - Epoch 158 Train, Loss: 13.14, OT Loss: 7.79e-08, Wass Distance: 548.97, OT obj value: 59.74, Count Loss: 12.09, TV Loss: 1.05, MSE: 17.82 MAE: 12.09, Cost 39.8 sec
+2023-12-20 20:04:09,004 - INFO - Epoch 158 Val, MSE: 130.14 MAE: 93.49, Cost 36.8 sec
+2023-12-20 20:04:09,006 - INFO - -----Epoch 159/4000-----
+2023-12-20 20:04:48,742 - INFO - Epoch 159 Train, Loss: 14.34, OT Loss: -8.57e-08, Wass Distance: 551.78, OT obj value: 57.93, Count Loss: 13.26, TV Loss: 1.08, MSE: 21.34 MAE: 13.26, Cost 39.7 sec
+2023-12-20 20:05:26,585 - INFO - Epoch 159 Val, MSE: 108.94 MAE: 67.88, Cost 36.5 sec
+2023-12-20 20:05:26,588 - INFO - -----Epoch 160/4000-----
+2023-12-20 20:06:06,097 - INFO - Epoch 160 Train, Loss: 13.99, OT Loss: 1.10e-07, Wass Distance: 538.34, OT obj value: 58.42, Count Loss: 12.87, TV Loss: 1.12, MSE: 20.90 MAE: 12.87, Cost 39.5 sec
+2023-12-20 20:06:44,514 - INFO - Epoch 160 Val, MSE: 123.45 MAE: 88.68, Cost 37.0 sec
+2023-12-20 20:06:44,518 - INFO - -----Epoch 161/4000-----
+2023-12-20 20:07:24,555 - INFO - Epoch 161 Train, Loss: 12.33, OT Loss: -4.59e-08, Wass Distance: 557.60, OT obj value: 55.71, Count Loss: 11.30, TV Loss: 1.02, MSE: 18.89 MAE: 11.30, Cost 40.0 sec
+2023-12-20 20:08:02,707 - INFO - Epoch 161 Val, MSE: 108.36 MAE: 70.99, Cost 36.8 sec
+2023-12-20 20:08:02,710 - INFO - -----Epoch 162/4000-----
+2023-12-20 20:08:42,807 - INFO - Epoch 162 Train, Loss: 15.59, OT Loss: -2.44e-07, Wass Distance: 545.46, OT obj value: 62.98, Count Loss: 14.47, TV Loss: 1.12, MSE: 24.55 MAE: 14.47, Cost 40.1 sec
+2023-12-20 20:09:20,904 - INFO - Epoch 162 Val, MSE: 96.02 MAE: 64.26, Cost 36.7 sec
+2023-12-20 20:09:20,907 - INFO - -----Epoch 163/4000-----
+2023-12-20 20:10:04,793 - INFO - Epoch 163 Train, Loss: 12.25, OT Loss: -7.09e-07, Wass Distance: 544.13, OT obj value: 55.37, Count Loss: 11.20, TV Loss: 1.05, MSE: 16.33 MAE: 11.20, Cost 43.9 sec
+2023-12-20 20:10:46,199 - INFO - Epoch 163 Val, MSE: 105.74 MAE: 72.31, Cost 39.9 sec
+2023-12-20 20:10:46,202 - INFO - -----Epoch 164/4000-----
+2023-12-20 20:11:27,517 - INFO - Epoch 164 Train, Loss: 13.52, OT Loss: 3.59e-08, Wass Distance: 549.07, OT obj value: 58.97, Count Loss: 12.49, TV Loss: 1.03, MSE: 21.38 MAE: 12.49, Cost 41.3 sec
+2023-12-20 20:12:07,000 - INFO - Epoch 164 Val, MSE: 112.83 MAE: 72.95, Cost 38.0 sec
+2023-12-20 20:12:07,003 - INFO - -----Epoch 165/4000-----
+2023-12-20 20:12:50,768 - INFO - Epoch 165 Train, Loss: 15.21, OT Loss: 3.50e-07, Wass Distance: 550.33, OT obj value: 60.53, Count Loss: 14.11, TV Loss: 1.10, MSE: 26.74 MAE: 14.11, Cost 43.8 sec
+2023-12-20 20:13:31,108 - INFO - Epoch 165 Val, MSE: 108.61 MAE: 73.03, Cost 39.0 sec
+2023-12-20 20:13:31,111 - INFO - -----Epoch 166/4000-----
+2023-12-20 20:14:10,605 - INFO - Epoch 166 Train, Loss: 13.28, OT Loss: -3.63e-07, Wass Distance: 552.30, OT obj value: 60.64, Count Loss: 12.18, TV Loss: 1.10, MSE: 19.53 MAE: 12.18, Cost 39.5 sec
+2023-12-20 20:14:52,788 - INFO - Epoch 166 Val, MSE: 96.75 MAE: 60.55, Cost 40.8 sec
+2023-12-20 20:14:52,791 - INFO - save best mse 96.75 mae 60.55 model epoch 166
+2023-12-20 20:14:53,146 - INFO - -----Epoch 167/4000-----
+2023-12-20 20:15:34,289 - INFO - Epoch 167 Train, Loss: 13.16, OT Loss: -4.02e-08, Wass Distance: 539.20, OT obj value: 55.70, Count Loss: 12.07, TV Loss: 1.09, MSE: 20.19 MAE: 12.07, Cost 41.1 sec
+2023-12-20 20:16:12,781 - INFO - Epoch 167 Val, MSE: 113.03 MAE: 71.99, Cost 37.1 sec
+2023-12-20 20:16:12,783 - INFO - -----Epoch 168/4000-----
+2023-12-20 20:16:51,969 - INFO - Epoch 168 Train, Loss: 15.73, OT Loss: 2.07e-07, Wass Distance: 549.06, OT obj value: 57.78, Count Loss: 14.63, TV Loss: 1.10, MSE: 28.49 MAE: 14.63, Cost 39.2 sec
+2023-12-20 20:17:30,185 - INFO - Epoch 168 Val, MSE: 90.45 MAE: 62.53, Cost 36.8 sec
+2023-12-20 20:17:30,187 - INFO - -----Epoch 169/4000-----
+2023-12-20 20:18:09,481 - INFO - Epoch 169 Train, Loss: 13.63, OT Loss: -2.86e-07, Wass Distance: 539.84, OT obj value: 61.46, Count Loss: 12.51, TV Loss: 1.11, MSE: 24.54 MAE: 12.51, Cost 39.3 sec
+2023-12-20 20:18:48,083 - INFO - Epoch 169 Val, MSE: 125.99 MAE: 89.04, Cost 37.2 sec
+2023-12-20 20:18:48,085 - INFO - -----Epoch 170/4000-----
+2023-12-20 20:19:27,548 - INFO - Epoch 170 Train, Loss: 13.20, OT Loss: 1.17e-07, Wass Distance: 542.08, OT obj value: 58.44, Count Loss: 12.03, TV Loss: 1.17, MSE: 21.09 MAE: 12.03, Cost 39.5 sec
+2023-12-20 20:20:05,955 - INFO - Epoch 170 Val, MSE: 126.19 MAE: 83.11, Cost 36.9 sec
+2023-12-20 20:20:05,958 - INFO - -----Epoch 171/4000-----
+2023-12-20 20:20:45,128 - INFO - Epoch 171 Train, Loss: 13.18, OT Loss: -2.12e-07, Wass Distance: 556.89, OT obj value: 58.86, Count Loss: 12.11, TV Loss: 1.07, MSE: 20.23 MAE: 12.11, Cost 39.2 sec
+2023-12-20 20:21:23,404 - INFO - Epoch 171 Val, MSE: 129.03 MAE: 93.18, Cost 37.0 sec
+2023-12-20 20:21:23,407 - INFO - -----Epoch 172/4000-----
+2023-12-20 20:22:02,516 - INFO - Epoch 172 Train, Loss: 13.36, OT Loss: 3.20e-07, Wass Distance: 538.42, OT obj value: 56.48, Count Loss: 12.31, TV Loss: 1.04, MSE: 20.52 MAE: 12.31, Cost 39.1 sec
+2023-12-20 20:22:40,644 - INFO - Epoch 172 Val, MSE: 93.38 MAE: 59.24, Cost 36.8 sec
+2023-12-20 20:22:40,647 - INFO - save best mse 93.38 mae 59.24 model epoch 172
+2023-12-20 20:22:41,010 - INFO - -----Epoch 173/4000-----
+2023-12-20 20:23:20,264 - INFO - Epoch 173 Train, Loss: 10.57, OT Loss: -4.64e-07, Wass Distance: 557.89, OT obj value: 54.87, Count Loss: 9.52, TV Loss: 1.05, MSE: 15.79 MAE: 9.52, Cost 39.3 sec
+2023-12-20 20:23:58,443 - INFO - Epoch 173 Val, MSE: 99.46 MAE: 69.22, Cost 36.8 sec
+2023-12-20 20:23:58,446 - INFO - -----Epoch 174/4000-----
+2023-12-20 20:24:37,630 - INFO - Epoch 174 Train, Loss: 13.75, OT Loss: -6.18e-08, Wass Distance: 530.90, OT obj value: 56.87, Count Loss: 12.61, TV Loss: 1.14, MSE: 21.50 MAE: 12.61, Cost 39.2 sec
+2023-12-20 20:25:15,835 - INFO - Epoch 174 Val, MSE: 91.31 MAE: 57.64, Cost 36.8 sec
+2023-12-20 20:25:15,838 - INFO - save best mse 91.31 mae 57.64 model epoch 174
+2023-12-20 20:25:16,204 - INFO - -----Epoch 175/4000-----
+2023-12-20 20:25:55,487 - INFO - Epoch 175 Train, Loss: 12.84, OT Loss: 4.55e-07, Wass Distance: 554.46, OT obj value: 57.07, Count Loss: 11.79, TV Loss: 1.05, MSE: 19.98 MAE: 11.79, Cost 39.3 sec
+2023-12-20 20:26:33,552 - INFO - Epoch 175 Val, MSE: 140.07 MAE: 96.32, Cost 36.9 sec
+2023-12-20 20:26:33,555 - INFO - -----Epoch 176/4000-----
+2023-12-20 20:27:12,855 - INFO - Epoch 176 Train, Loss: 16.04, OT Loss: 1.62e-07, Wass Distance: 548.64, OT obj value: 57.90, Count Loss: 14.92, TV Loss: 1.11, MSE: 25.40 MAE: 14.92, Cost 39.3 sec
+2023-12-20 20:27:50,938 - INFO - Epoch 176 Val, MSE: 100.61 MAE: 63.90, Cost 36.7 sec
+2023-12-20 20:27:50,941 - INFO - -----Epoch 177/4000-----
+2023-12-20 20:28:30,069 - INFO - Epoch 177 Train, Loss: 12.74, OT Loss: 4.51e-07, Wass Distance: 537.11, OT obj value: 59.85, Count Loss: 11.66, TV Loss: 1.08, MSE: 19.21 MAE: 11.66, Cost 39.1 sec
+2023-12-20 20:29:08,506 - INFO - Epoch 177 Val, MSE: 98.89 MAE: 66.89, Cost 37.0 sec
+2023-12-20 20:29:08,509 - INFO - -----Epoch 178/4000-----
+2023-12-20 20:29:47,625 - INFO - Epoch 178 Train, Loss: 12.28, OT Loss: 3.68e-07, Wass Distance: 546.58, OT obj value: 54.85, Count Loss: 11.22, TV Loss: 1.05, MSE: 18.41 MAE: 11.22, Cost 39.1 sec
+2023-12-20 20:30:25,847 - INFO - Epoch 178 Val, MSE: 136.19 MAE: 89.71, Cost 36.8 sec
+2023-12-20 20:30:25,851 - INFO - -----Epoch 179/4000-----
+2023-12-20 20:31:05,224 - INFO - Epoch 179 Train, Loss: 12.68, OT Loss: 8.93e-08, Wass Distance: 558.78, OT obj value: 58.14, Count Loss: 11.57, TV Loss: 1.12, MSE: 18.68 MAE: 11.57, Cost 39.4 sec
+2023-12-20 20:31:43,443 - INFO - Epoch 179 Val, MSE: 103.25 MAE: 66.37, Cost 36.8 sec
+2023-12-20 20:31:43,446 - INFO - -----Epoch 180/4000-----

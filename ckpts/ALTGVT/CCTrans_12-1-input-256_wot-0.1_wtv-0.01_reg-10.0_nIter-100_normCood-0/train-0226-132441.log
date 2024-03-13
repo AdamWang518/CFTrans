@@ -1,0 +1,30 @@
+2024-02-26 13:24:41,080 - INFO - data_dir       :	D:\Github\ShanghaiTech\part_A_final
+2024-02-26 13:24:41,080 - INFO - dataset        :	sha
+2024-02-26 13:24:41,080 - INFO - lr             :	1e-05
+2024-02-26 13:24:41,080 - INFO - weight_decay   :	0.0001
+2024-02-26 13:24:41,081 - INFO - resume         :	
+2024-02-26 13:24:41,081 - INFO - max_epoch      :	4000
+2024-02-26 13:24:41,081 - INFO - val_epoch      :	1
+2024-02-26 13:24:41,081 - INFO - val_start      :	0
+2024-02-26 13:24:41,081 - INFO - batch_size     :	8
+2024-02-26 13:24:41,081 - INFO - device         :	0
+2024-02-26 13:24:41,081 - INFO - num_workers    :	8
+2024-02-26 13:24:41,081 - INFO - crop_size      :	256
+2024-02-26 13:24:41,081 - INFO - wot            :	0.1
+2024-02-26 13:24:41,082 - INFO - wtv            :	0.01
+2024-02-26 13:24:41,082 - INFO - reg            :	10.0
+2024-02-26 13:24:41,082 - INFO - num_of_iter_in_ot:	100
+2024-02-26 13:24:41,082 - INFO - norm_cood      :	0
+2024-02-26 13:24:41,082 - INFO - run_name       :	CCTrans
+2024-02-26 13:24:41,082 - INFO - wandb          :	0
+2024-02-26 13:24:41,101 - INFO - using 1 gpus
+2024-02-26 13:24:42,644 - INFO - random initialization
+2024-02-26 13:24:42,672 - INFO - -----Epoch 0/4000-----
+2024-02-26 13:25:32,166 - INFO - Epoch 0 Train, Loss: 46.39, OT Loss: -1.75e-07, Wass Distance: 826.60, OT obj value: 74.35, Count Loss: 45.09, TV Loss: 1.30, MSE: 89.36 MAE: 45.09, Cost 49.5 sec
+2024-02-26 13:26:14,042 - INFO - Epoch 0 Val, MSE: 237.28 MAE: 144.61, Cost 40.8 sec
+2024-02-26 13:26:14,046 - INFO - save best mse 237.28 mae 144.61 model epoch 0
+2024-02-26 13:26:14,414 - INFO - -----Epoch 1/4000-----
+2024-02-26 13:26:56,355 - INFO - Epoch 1 Train, Loss: 34.51, OT Loss: -2.25e-08, Wass Distance: 806.93, OT obj value: 53.66, Count Loss: 33.28, TV Loss: 1.23, MSE: 61.93 MAE: 33.28, Cost 41.9 sec
+2024-02-26 13:27:36,824 - INFO - Epoch 1 Val, MSE: 165.26 MAE: 104.77, Cost 39.2 sec
+2024-02-26 13:27:36,827 - INFO - save best mse 165.26 mae 104.77 model epoch 1
+2024-02-26 13:27:37,200 - INFO - -----Epoch 2/4000-----
