@@ -16,7 +16,7 @@ from Networks import customTwins
 from Networks import efficientTwins
 from Networks import ETTrans
 from Networks import EStageTrans
-from losses.ot_loss import OT_Loss
+from losses.chfloss import Chfloss
 from utils.pytorch_utils import Save_Handle, AverageMeter
 import utils.log_utils as log_utils
 import wandb
@@ -125,10 +125,10 @@ class Trainer(object):
             for x in ["train", "val"]
         }
         # self.model = ALTGVT.alt_gvt_large(pretrained=True)
-        # self.model = customTwins.CustomTwinsSVTLarge(pretrained=True)
+        self.model = customTwins.CustomTwinsSVTLarge(pretrained=True)
         # self.model = efficientTwins.CustomTwinsSVTLarge(pretrained=True)
         # self.model = ETTrans.CustomTwinsSVTLarge(pretrained=True)
-        self.model = EStageTrans.CustomTwinsSVTLarge(pretrained=True)
+        # self.model = EStageTrans.CustomTwinsSVTLarge(pretrained=True)
         self.model.to(self.device)
         self.optimizer = optim.AdamW(
             self.model.parameters(), lr=args.lr, weight_decay=args.weight_decay
@@ -159,15 +159,16 @@ class Trainer(object):
         else:
             self.logger.info("random initialization")
 
-        self.ot_loss = OT_Loss(
-            args.crop_size,
-            downsample_ratio,
-            args.norm_cood,
-            self.device,
-            args.num_of_iter_in_ot,
-            args.reg,
-        )
-        self.tv_loss = nn.L1Loss(reduction="none").to(self.device)
+        # self.ot_loss = OT_Loss(
+        #     args.crop_size,
+        #     downsample_ratio,
+        #     args.norm_cood,
+        #     self.device,
+        #     args.num_of_iter_in_ot,
+        #     args.reg,
+        # )
+        self.lossfn = Chfloss(chf_step=30, chf_tik=0.01, sample_step=8, is_dense=True)
+        # self.tv_loss = nn.L1Loss(reduction="none").to(self.device)
         self.mse = nn.MSELoss().to(self.device)
         self.mae = nn.L1Loss().to(self.device)
         self.save_list = Save_Handle(max_num=1)
@@ -188,11 +189,11 @@ class Trainer(object):
                 self.val_epoch()
 
     def train_epoch(self):
-        epoch_ot_loss = AverageMeter()
-        epoch_ot_obj_value = AverageMeter()
-        epoch_wd = AverageMeter()
-        epoch_count_loss = AverageMeter()
-        epoch_tv_loss = AverageMeter()
+        # epoch_ot_loss = AverageMeter()
+        # epoch_ot_obj_value = AverageMeter()
+        # epoch_wd = AverageMeter()
+        # epoch_count_loss = AverageMeter()
+        # epoch_tv_loss = AverageMeter()
         epoch_loss = AverageMeter()
         epoch_mae = AverageMeter()
         epoch_mse = AverageMeter()
@@ -208,43 +209,12 @@ class Trainer(object):
 
             with torch.set_grad_enabled(True):
                 outputs, outputs_normed = self.model(inputs)
-                # Compute OT loss.
-                ot_loss, wd, ot_obj_value = self.ot_loss(
-                    outputs_normed, outputs, points
-                )
-                ot_loss = ot_loss * self.args.wot
-                ot_obj_value = ot_obj_value * self.args.wot
-                epoch_ot_loss.update(ot_loss.item(), N)
-                epoch_ot_obj_value.update(ot_obj_value.item(), N)
-                epoch_wd.update(wd, N)
-
-                # Compute counting loss.
-                count_loss = self.mae(
-                    outputs.sum(1).sum(1).sum(1),
-                    torch.from_numpy(gd_count).float().to(self.device),
-                )
-                epoch_count_loss.update(count_loss.item(), N)
-
-                # Compute TV loss.
-                gd_count_tensor = (
-                    torch.from_numpy(gd_count)
-                    .float()
-                    .to(self.device)
-                    .unsqueeze(1)
-                    .unsqueeze(2)
-                    .unsqueeze(3)
-                )
-                gt_discrete_normed = gt_discrete / (gd_count_tensor + 1e-6)
-                tv_loss = (
-                    self.tv_loss(outputs_normed, gt_discrete_normed)
-                    .sum(1)
-                    .sum(1)
-                    .sum(1)
-                    * torch.from_numpy(gd_count).float().to(self.device)
-                ).mean(0) * self.args.wtv
-                epoch_tv_loss.update(tv_loss.item(), N)
-
-                loss = ot_loss + count_loss + tv_loss
+                
+               
+                # 打印 derived_chf 和 chf 的形狀
+                # print("outputs shape:", outputs.shape)
+                # print("gt_discrete shape:", gt_discrete.shape)
+                loss = self.lossfn(outputs, gt_discrete)
 
                 self.optimizer.zero_grad()
                 loss.backward()
@@ -263,23 +233,16 @@ class Trainer(object):
                 wandb.log(
                     {
                         "train/TOTAL_loss": loss,
-                        "train/count_loss": count_loss,
-                        "train/tv_loss": tv_loss,
                         "train/pred_err": pred_err,
                     },
                     step=self.epoch,
                 )
 
         self.logger.info(
-            "Epoch {} Train, Loss: {:.2f}, OT Loss: {:.2e}, Wass Distance: {:.2f}, OT obj value: {:.2f}, "
-            "Count Loss: {:.2f}, TV Loss: {:.2f}, MSE: {:.2f} MAE: {:.2f}, Cost {:.1f} sec".format(
+            "Epoch {} Train, Loss: {:.2f}"
+            "MSE: {:.2f} MAE: {:.2f}, Cost {:.1f} sec".format(
                 self.epoch,
                 epoch_loss.get_avg(),
-                epoch_ot_loss.get_avg(),
-                epoch_wd.get_avg(),
-                epoch_ot_obj_value.get_avg(),
-                epoch_count_loss.get_avg(),
-                epoch_tv_loss.get_avg(),
                 np.sqrt(epoch_mse.get_avg()),
                 epoch_mae.get_avg(),
                 time.time() - epoch_start,
