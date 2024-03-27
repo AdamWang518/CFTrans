@@ -9,7 +9,8 @@ import numpy as np
 from datetime import datetime
 import torch.nn.functional as F
 from datasets.crowd import Crowd_qnrf, Crowd_nwpu, Crowd_sh, CustomDataset
-from losses import chfloss, chf_likelihood
+#增加動態衰減
+from torch.optim.lr_scheduler import ReduceLROnPlateau
 # from models import vgg19
 from Networks import ALTGVT
 from Networks import customTwins
@@ -130,10 +131,13 @@ class Trainer(object):
         # self.model = ETTrans.CustomTwinsSVTLarge(pretrained=True)
         # self.model = EStageTrans.CustomTwinsSVTLarge(pretrained=True)
         self.model.to(self.device)
+        
         self.optimizer = optim.AdamW(
             self.model.parameters(), lr=args.lr, weight_decay=args.weight_decay
         )
-        
+        self.total_steps = self.args.max_epoch * len(self.dataloaders["train"])
+        self.warmup_steps = int(self.total_steps * 0.0125)  # 假设预热阶段为总步骤数的5%
+        self.scheduler = ReduceLROnPlateau(self.optimizer, mode='min', factor=0.5, patience=100, verbose=True)
         self.start_epoch = 0
 
         # check if wandb has to log
@@ -168,12 +172,7 @@ class Trainer(object):
         #     args.num_of_iter_in_ot,
         #     args.reg,
         # )
-        # self.lossfn = Chfloss(chf_step=30, chf_tik=0.01, sample_step=8, is_dense=True)
-        likelihood = chf_likelihood.Central_Gaussian(30, 0.01, 'empirical_var.pt', 0.5)
-        self.lossfn = chfloss.Chf_Likelihood_Loss(30, 0.01, 8, likelihood)
-        # likelihood = chf_likelihood.Central_Gaussian_with_Gaussian_Noise(chf_step, chf_tik, 20, bandwidth)
-        # self.lossfn = chfloss.Chf_Likelihood_Loss(30, 0.01, 8, likelihood)
-
+        self.lossfn = Chfloss(chf_step=30, chf_tik=0.01, sample_step=8, is_dense=True)
         # self.tv_loss = nn.L1Loss(reduction="none").to(self.device)
         self.mse = nn.MSELoss().to(self.device)
         self.mae = nn.L1Loss().to(self.device)
@@ -225,7 +224,6 @@ class Trainer(object):
                 self.optimizer.zero_grad()
                 loss.backward()
                 self.optimizer.step()
-
                 pred_count = (
                     torch.sum(outputs.view(N, -1),
                               dim=1).detach().cpu().numpy()
@@ -245,7 +243,7 @@ class Trainer(object):
                 )
 
         self.logger.info(
-            "Epoch {} Train, Loss: {:.2f} "
+            "Epoch {} Train, Loss: {:.2f}"
             "MSE: {:.2f} MAE: {:.2f}, Cost {:.1f} sec".format(
                 self.epoch,
                 epoch_loss.get_avg(),
@@ -326,10 +324,11 @@ class Trainer(object):
 
                 res = count[0].item() - torch.sum(outputs).item()
                 epoch_res.append(res)
+                
         epoch_res = np.array(epoch_res)
         mse = np.sqrt(np.mean(np.square(epoch_res)))
         mae = np.mean(np.abs(epoch_res))
-
+        self.scheduler.step(mae)
         self.logger.info(
             "Epoch {} Val, MSE: {:.2f} MAE: {:.2f}, Cost {:.1f} sec".format(
                 self.epoch, mse, mae, time.time() - epoch_start

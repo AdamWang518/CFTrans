@@ -131,16 +131,23 @@ class Chf_Likelihood_Loss(nn.Module):
         self.img_template = torch.sin(angle)
 
 
-    def forward(self, dnn_output: torch.Tensor, chf: torch.Tensor):
-        if dnn_output.shape != self.plane_shape:
+    def forward(self, dnn_output: torch.Tensor, gt_density_map: torch.Tensor):
+        if dnn_output.shape[-2:] != self.plane_shape:
             self.make_template(dnn_output)
-            self.plane_shape = dnn_output.shape
+            self.plane_shape = dnn_output.shape[-2:]
 
-        flatten_output = dnn_output.transpose(-1, -2).contiguous().view(dnn_output.shape[0], -1)
-        chf_real = (self.real_template * flatten_output[:, None, None, :]).sum(dim=3, keepdim=True)
-        chf_img = (self.img_template * flatten_output[:, None, None, :]).sum(dim=3, keepdim=True)
+        # convert DNN output density map to characteristic function form
+        flatten_dnn_output = dnn_output.transpose(-1, -2).contiguous().view(dnn_output.shape[0], -1)
+        chf_real = (self.real_template * flatten_dnn_output[:, None, None, :]).sum(dim=3, keepdim=True)
+        chf_img = (self.img_template * flatten_dnn_output[:, None, None, :]).sum(dim=3, keepdim=True)
+        derived_chf = torch.cat([chf_real, chf_img], dim=3).to(dtype=gt_density_map.dtype, device=gt_density_map.device)
 
+        # convert ground truth density map to characteristic function form (same as DNN output conversion)
+        flatten_gt_density = gt_density_map.transpose(-1, -2).contiguous().view(gt_density_map.shape[0], -1)
+        gt_chf_real = (self.real_template * flatten_gt_density[:, None, None, :]).sum(dim=3, keepdim=True)
+        gt_chf_img = (self.img_template * flatten_gt_density[:, None, None, :]).sum(dim=3, keepdim=True)
+        gt_chf = torch.cat([gt_chf_real, gt_chf_img], dim=3).to(dtype=gt_density_map.dtype, device=gt_density_map.device)
 
-        derived_chf = torch.cat([chf_real, chf_img], dim=3).to(dtype=chf.dtype, device=chf.device)
-        loss = self.likelihood.likelihood(derived_chf, chf, self.scale)
+        # calculate loss between the two characteristic functions
+        loss = self.likelihood.likelihood(derived_chf, gt_chf, self.scale)
         return loss
